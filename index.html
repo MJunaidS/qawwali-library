@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qawwali Library</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0c0a06; --surface:#13100a; --surface2:#1c1710;
+  --border:rgba(193,154,72,0.2); --gold:#c19a48; --gold-light:#e8c97a;
+  --gold-dim:rgba(193,154,72,0.1); --text:#e8dcc8; --muted:#8a7a5a;
+  --lyric:#4a9e6a; --alap:#9a5ec8; --instr:#c85e5e; --tarana:#5e8ac8;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',serif;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 15% 30%,rgba(193,154,72,.04) 0%,transparent 55%);pointer-events:none;z-index:0;}
+
+/* HEADER */
+header{text-align:center;padding:2.5rem 1rem 2rem;border-bottom:1px solid var(--border);position:relative;z-index:1;}
+.ornament{font-size:1.3rem;color:var(--gold);letter-spacing:.6em;display:block;margin-bottom:.4rem;opacity:.7;}
+h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-light);letter-spacing:.2em;}
+.tagline{color:var(--muted);font-size:.95rem;font-style:italic;margin-top:.3rem;}
+
+/* VIEWS */
+.view{display:none;position:relative;z-index:1;}
+.view.active{display:block;}
+
+/* LIBRARY VIEW */
+.library-grid{max-width:1000px;margin:2.5rem auto;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;}
+.empty-state{max-width:500px;margin:5rem auto;text-align:center;padding:0 1.5rem;}
+.empty-icon{font-size:3rem;margin-bottom:1rem;opacity:.4;}
+.empty-title{font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:.6rem;}
+.empty-txt{color:var(--muted);font-size:.9rem;line-height:1.7;font-style:italic;}
+
+.qawwali-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.3rem;cursor:pointer;transition:all .25s;position:relative;overflow:hidden;}
+.qawwali-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(193,154,72,.04) 0%,transparent 60%);pointer-events:none;}
+.qawwali-card:hover{border-color:rgba(193,154,72,.45);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.4);}
+.card-title{font-family:'Noto Nastaliq Urdu',serif;font-size:1.2rem;color:var(--gold-light);direction:rtl;text-align:right;margin-bottom:.4rem;line-height:1.5;}
+.card-artist{font-size:.85rem;color:var(--muted);font-style:italic;margin-bottom:.6rem;}
+.card-lang{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);opacity:.6;}
+.card-arrow{position:absolute;bottom:1rem;right:1rem;color:var(--gold);opacity:.4;font-size:1rem;}
+
+/* QAWWALI VIEW */
+.qawwali-view-inner{max-width:920px;margin:0 auto;padding:0 0 4rem;}
+
+.qv-header{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:.8rem;}
+.qv-title-block .qt{font-family:'Cinzel',serif;font-size:1.15rem;color:var(--gold-light);font-weight:400;}
+.qv-title-block .qm{color:var(--muted);font-size:.85rem;font-style:italic;margin-top:.15rem;}
+.btn-back{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:.45rem .9rem;font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
+.btn-back:hover{border-color:var(--gold);color:var(--gold);}
+
+/* Audio */
+.audio-bar{padding:.85rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.8rem;}
+.play-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold);font-size:.85rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.play-btn:hover{background:var(--gold);color:var(--bg);}
+.audio-track{flex:1;height:3px;background:rgba(193,154,72,.15);border-radius:3px;cursor:pointer;position:relative;}
+.audio-fill{height:100%;background:var(--gold);border-radius:3px;width:0%;pointer-events:none;transition:width .1s linear;}
+.audio-time{font-size:.78rem;color:var(--muted);flex-shrink:0;min-width:90px;text-align:right;}
+
+/* Overview */
+.overview-card{background:var(--surface);margin:1.2rem 1.5rem;border:1px solid var(--border);border-radius:10px;padding:1.2rem 1.4rem;}
+.overview-lbl{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;color:var(--gold);opacity:.7;text-transform:uppercase;margin-bottom:.5rem;}
+.overview-txt{font-size:.95rem;line-height:1.85;opacity:.85;}
+
+/* Legend */
+.legend{display:flex;flex-wrap:wrap;gap:.8rem;padding:.5rem 1.5rem;border-bottom:1px solid var(--border);font-size:.72rem;}
+.legend-item{display:flex;align-items:center;gap:.35rem;color:var(--muted);}
+.legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+
+/* Lyrics section */
+.lyrics-section{height:400px;overflow-y:auto;border-bottom:2px solid var(--border);padding:1.2rem 1.5rem;}
+.ls-label{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);opacity:.55;margin-bottom:.8rem;}
+.lyric-row{display:flex;align-items:center;gap:.5rem;min-height:2.2rem;margin-bottom:.15rem;direction:rtl;max-width:620px;margin-left:auto;margin-right:auto;}
+.lyric-text{flex:1;font-family:'Noto Nastaliq Urdu',serif;font-size:1.05rem;line-height:1.9;text-align:right;direction:rtl;padding:.05rem 0;border-radius:4px;transition:background .2s,color .2s;}
+.lyric-text.active{background:rgba(193,154,72,.12);color:var(--gold-light);}
+.tl-circle{width:13px;height:13px;border-radius:50%;border:2px solid;background:var(--bg);cursor:pointer;flex-shrink:0;transition:all .25s;}
+.tl-circle:hover{transform:scale(1.35);}
+.tl-circle.type-lyric{border-color:var(--lyric);}
+.tl-circle.type-alap{border-color:var(--alap);}
+.tl-circle.type-instrumental{border-color:var(--instr);}
+.tl-circle.type-tarana{border-color:var(--tarana);}
+.tl-circle.active{transform:scale(1.4);}
+.tl-circle.type-lyric.active{background:var(--lyric);box-shadow:0 0 8px var(--lyric);}
+.tl-circle.type-alap.active{background:var(--alap);box-shadow:0 0 8px var(--alap);}
+.tl-circle.type-instrumental.active{background:var(--instr);box-shadow:0 0 8px var(--instr);}
+.tl-circle.type-tarana.active{background:var(--tarana);box-shadow:0 0 8px var(--tarana);}
+.lyric-sep{text-align:center;color:var(--muted);font-size:.75rem;letter-spacing:.4em;margin:.4rem 0;opacity:.35;display:block;direction:ltr;}
+
+/* Analysis */
+.analysis-body{padding:1.5rem;}
+.sections-lbl{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);opacity:.55;margin-bottom:1.2rem;}
+.section-card{border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1.1rem;border-left:3px solid;background:var(--surface);scroll-margin-top:1rem;}
+.section-card.type-lyric{border-color:var(--lyric);}
+.section-card.type-alap{border-color:var(--alap);}
+.section-card.type-instrumental{border-color:var(--instr);}
+.section-card.type-tarana{border-color:var(--tarana);}
+.card-hdr{display:flex;align-items:center;gap:.7rem;margin-bottom:.7rem;flex-wrap:wrap;}
+.card-badge{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;padding:.15rem .5rem;border-radius:20px;border:1px solid;}
+.type-lyric .card-badge{color:var(--lyric);border-color:rgba(74,158,106,.3);background:rgba(74,158,106,.07);}
+.type-alap .card-badge{color:var(--alap);border-color:rgba(154,94,200,.3);background:rgba(154,94,200,.07);}
+.type-instrumental .card-badge{color:var(--instr);border-color:rgba(200,94,94,.3);background:rgba(200,94,94,.07);}
+.type-tarana .card-badge{color:var(--tarana);border-color:rgba(94,138,200,.3);background:rgba(94,138,200,.07);}
+.card-ts{font-size:.75rem;color:var(--muted);font-style:italic;}
+.card-urdu{font-family:'Noto Nastaliq Urdu',serif;font-size:1.1rem;line-height:1.9;margin-bottom:.35rem;text-align:right;direction:rtl;}
+.card-roman{font-size:.82rem;color:var(--muted);margin-bottom:.35rem;}
+.card-trans{font-size:.95rem;color:var(--gold);font-style:italic;margin-bottom:.7rem;padding-bottom:.7rem;border-bottom:1px solid var(--border);}
+.card-expl{font-size:.9rem;line-height:1.8;opacity:.85;}
+
+/* Loading */
+.loading{text-align:center;padding:4rem 1rem;color:var(--muted);font-style:italic;}
+</style>
+</head>
+<body>
+<header>
+  <span class="ornament">☽ ✦ ☾</span>
+  <h1>Qawwali Library</h1>
+  <p class="tagline">A collection of qawwali analyses</p>
+</header>
+
+<!-- LIBRARY VIEW -->
+<div class="view active" id="libraryView">
+  <div id="libraryContent"><div class="loading">Loading library...</div></div>
+</div>
+
+<!-- QAWWALI VIEW -->
+<div class="view" id="qawwaliView">
+  <div class="qawwali-view-inner">
+    <div class="qv-header">
+      <div class="qv-title-block">
+        <div class="qt" id="qvTitle"></div>
+        <div class="qm" id="qvMeta"></div>
+      </div>
+      <button class="btn-back" onclick="showLibrary()">← Library</button>
+    </div>
+
+    <div class="audio-bar">
+      <div id="yt-embed-wrap" style="width:100%;aspect-ratio:16/9;background:#000;"></div>
+      <div style="display:flex;align-items:center;gap:.8rem;padding:.7rem 1.5rem;">
+        <div class="audio-track" id="audioTrack" onclick="seekAudio(event)">
+          <div class="audio-fill" id="audioFill"></div>
+        </div>
+        <div class="audio-time" id="audioTime">0:00 / 0:00</div>
+      </div>
+    </div>
+
+    <div class="overview-card">
+      <div class="overview-lbl">✦ Spiritual Overview</div>
+      <div class="overview-txt" id="qvOverview"></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--lyric)"></div>Lyrical</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--alap)"></div>Alaap</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--instr)"></div>Instrumental</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--tarana)"></div>Tarana</div>
+    </div>
+
+    <div class="lyrics-section">
+      <div class="ls-label">Complete Lyrics &amp; Timeline</div>
+      <div id="qvLyrics"></div>
+    </div>
+
+    <div class="analysis-body">
+      <div class="sections-lbl">Section by Section Analysis</div>
+      <div id="qvSections"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let library = [];
+let currentEntry = null;
+let ytPlayer = null;
+let isPlaying = false;
+let ytInterval = null;
+
+// Load library.json
+async function loadLibrary() {
+  try {
+    const res = await fetch('library.json?v='+Date.now());
+    library = await res.json();
+    renderLibrary();
+  } catch(e) {
+    library = [];
+    renderLibrary();
+  }
+}
+
+function renderLibrary() {
+  const content = document.getElementById('libraryContent');
+  if (!library.length) {
+    content.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">☽</div>
+        <div class="empty-title">Library is Empty</div>
+        <div class="empty-txt">No qawwali analyses have been published yet. Use qawwali-publisher.html to add your first analysis.</div>
+      </div>`;
+    return;
+  }
+
+  const grid = document.createElement('div');
+  grid.className = 'library-grid';
+  library.forEach((entry, i) => {
+    const card = document.createElement('div');
+    card.className = 'qawwali-card';
+    card.innerHTML = `
+      <div class="card-title">${entry.title}</div>
+      <div class="card-artist">${[entry.artist, entry.poet?'Poetry by '+entry.poet:''].filter(Boolean).join(' · ')}</div>
+      <div class="card-lang">${entry.language||''}</div>
+      <div class="card-arrow">→</div>
+    `;
+    card.onclick = () => openQawwali(i);
+    grid.appendChild(card);
+  });
+  content.innerHTML = '';
+  content.appendChild(grid);
+}
+
+function openQawwali(idx) {
+  currentEntry = library[idx];
+  stopYT();
+  renderQawwaliView(currentEntry);
+  document.getElementById('libraryView').classList.remove('active');
+  document.getElementById('qawwaliView').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showLibrary() {
+  stopYT();
+  document.getElementById('qawwaliView').classList.remove('active');
+  document.getElementById('libraryView').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderQawwaliView(data) {
+  document.getElementById('qvTitle').textContent = data.title;
+  const meta = [data.artist, data.poet?'Poetry by '+data.poet:'', data.language].filter(Boolean);
+  document.getElementById('qvMeta').textContent = meta.join(' · ');
+  document.getElementById('qvOverview').textContent = data.overall_summary;
+
+  const typeLabels = { lyric:'Lyrical', alap:'Alaap', instrumental:'Instrumental', tarana:'Tarana' };
+
+  // Lyrics rows from timestamps
+  const lyricsDiv = document.getElementById('qvLyrics');
+  lyricsDiv.innerHTML = '';
+  const timestamps = data.timestamps || [];
+
+  timestamps.forEach((ts, idx) => {
+    const row = document.createElement('div');
+    row.className = 'lyric-row';
+
+    const text = document.createElement('span');
+    text.className = 'lyric-text';
+    text.textContent = ts.line;
+    text.dataset.idx = idx;
+
+    const secIdx = findSectionForLine(ts.line, data.sections);
+    const sec = secIdx !== null ? data.sections[secIdx] : null;
+    const type = sec ? sec.type : 'lyric';
+
+    const circle = document.createElement('div');
+    circle.className = `tl-circle type-${type}`;
+    circle.title = typeLabels[type]||type;
+    circle.onclick = () => scrollToCard(secIdx);
+
+    row.appendChild(text);
+    row.appendChild(circle);
+    lyricsDiv.appendChild(row);
+  });
+
+  // Section cards
+  const sectionsDiv = document.getElementById('qvSections');
+  sectionsDiv.innerHTML = '';
+  data.sections.forEach((sec, i) => {
+    const type = sec.type || 'lyric';
+    const card = document.createElement('div');
+    card.className = `section-card type-${type}`;
+    card.id = `qsec-${i}`;
+    card.innerHTML = `
+      <div class="card-hdr">
+        <span class="card-badge">${typeLabels[type]||type}</span>
+        <span class="card-ts">${sec.timestamp_hint||''}</span>
+      </div>
+      ${sec.urdu_text?`<div class="card-urdu">${sec.urdu_text}</div>`:''}
+      ${sec.romanization?`<div class="card-roman">🔊 ${sec.romanization}</div>`:''}
+      ${sec.translation?`<div class="card-trans">"${sec.translation}"</div>`:''}
+      <div class="card-expl">${sec.explanation||''}</div>
+    `;
+    sectionsDiv.appendChild(card);
+  });
+
+  // Setup YouTube
+  setupYT(data.youtube_url);
+  document.getElementById('audioTime').textContent = '0:00 / 0:00';
+  document.getElementById('audioFill').style.width = '0%';
+  document.getElementById('playBtn').textContent = '▶';
+}
+
+function findSectionForLine(line, sections) {
+  const key = normKey(line);
+  for (let i = 0; i < sections.length; i++) {
+    const sec = sections[i];
+    if (sec.urdu_text) {
+      const lines = sec.urdu_text.split('\n').map(l => normKey(l));
+      if (lines.some(sl => sl === key || (sl.length > 5 && (sl.includes(key) || key.includes(sl))))) return i;
+    }
+  }
+  return null;
+}
+
+function normKey(line) {
+  return (line||'').trim().replace(/\s+/g,' ').slice(0,60);
+}
+
+function scrollToCard(secIdx) {
+  if (secIdx === null) return;
+  const card = document.getElementById(`qsec-${secIdx}`);
+  if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// YouTube
+let ytDuration = 0;
+let ytUpdateInterval = null;
+
+function setupYT(url) {
+  const videoId = extractVideoId(url);
+  if (!videoId) return;
+
+  const wrap = document.getElementById('yt-embed-wrap');
+  wrap.innerHTML = '';
+
+  const iframe = document.createElement('iframe');
+  iframe.id = 'yt-iframe';
+  iframe.width = '100%';
+  iframe.height = '100%';
+  iframe.style.cssText = 'display:block;border:none;';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+  iframe.allowFullscreen = true;
+  iframe.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1&rel=0&modestbranding=1`;
+  wrap.appendChild(iframe);
+
+  // Fallback link for embedding-blocked videos
+  const existing = document.getElementById('yt-fallback');
+  if (existing) existing.remove();
+  const fallback = document.createElement('div');
+  fallback.id = 'yt-fallback';
+  fallback.style.cssText = 'text-align:center;padding:.4rem;background:rgba(193,154,72,.06);border-top:1px solid var(--border);';
+  fallback.innerHTML = `<a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" style="color:var(--gold);font-size:.8rem;font-style:italic;text-decoration:none;">↗ If video is blocked, watch on YouTube</a>`;
+  document.querySelector('.audio-bar').appendChild(fallback);
+
+  window.addEventListener('message', onYTMessage);
+
+  clearInterval(ytUpdateInterval);
+  ytUpdateInterval = setInterval(() => {
+    const f = document.getElementById('yt-iframe');
+    if (f && f.contentWindow) {
+      f.contentWindow.postMessage(JSON.stringify({ event:'listening' }), '*');
+    }
+  }, 500);
+}
+
+function onYTMessage(e) {
+  try {
+    const data = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+    if (!data) return;
+    // Embedding blocked — show fallback link
+    if (data.event === 'onError' && (data.info === 153 || data.info === 150 || data.info === 101)) {
+      const wrap = document.getElementById('yt-embed-wrap');
+      const vid = currentEntry ? extractVideoId(currentEntry.youtube_url) : null;
+      wrap.innerHTML = vid
+        ? `<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:2rem;"><a href="https://www.youtube.com/watch?v=${vid}" target="_blank" style="color:var(--gold);font-size:1rem;text-decoration:none;">↗ Watch on YouTube (embedding disabled for this video)</a></div>`
+        : '';
+      return;
+    }
+    if (!data.info) return;
+    if (data.info.currentTime !== undefined) {
+      const cur = data.info.currentTime;
+      const dur = data.info.duration || ytDuration;
+      if (dur) ytDuration = dur;
+      if (dur) {
+        document.getElementById('audioFill').style.width = ((cur/dur)*100)+'%';
+        document.getElementById('audioTime').textContent = fmt(cur)+' / '+fmt(dur);
+      }
+      highlightLine(cur);
+    }
+  } catch(err) {}
+}
+
+function createYT(videoId) { /* unused — kept for compatibility */ }
+
+
+function highlightLine(currentTime) {
+  if (!currentEntry) return;
+  const timestamps = currentEntry.timestamps || [];
+  if (!timestamps.length) return;
+  // Chronological position only — handles repeated lines correctly
+  let activeIdx = 0;
+  for (let i = 0; i < timestamps.length; i++) {
+    if (timestamps[i].start <= currentTime) activeIdx = i;
+    else break;
+  }
+  const lyricEls = document.querySelectorAll('#qvLyrics .lyric-text');
+  const circleEls = document.querySelectorAll('#qvLyrics .tl-circle');
+  lyricEls.forEach((el,i) => el.classList.toggle('active', i===activeIdx));
+  circleEls.forEach((el,i) => el.classList.toggle('active', i===activeIdx));
+
+}
+
+function stopYT() {
+  clearInterval(ytInterval);
+  if (ytPlayer) { try { ytPlayer.stopVideo(); } catch(e){} }
+  isPlaying = false;
+}
+
+function extractVideoId(url) {
+  try {
+    const u = new URL(url);
+    return u.searchParams.get('v') || u.pathname.split('/').pop();
+  } catch { return null; }
+}
+
+function fmt(s) {
+  if (!s||isNaN(s)) return '0:00';
+  return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+}
+
+loadLibrary();
+</script>
+</body>
+</html>
