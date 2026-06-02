@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Qawwali Library</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg:#0c0a06; --surface:#13100a; --surface2:#1c1710;
@@ -13,14 +13,14 @@
   --lyric:#4a9e6a; --alap:#9a5ec8; --instr:#c85e5e; --tarana:#5e8ac8;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',serif;min-height:100vh;}
+body{background:var(--bg);color:var(--text);font-family:'Libre Baskerville',serif;min-height:100vh;}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 15% 30%,rgba(193,154,72,.04) 0%,transparent 55%);pointer-events:none;z-index:0;}
 
 /* HEADER */
 header{text-align:center;padding:2.5rem 1rem 2rem;border-bottom:1px solid var(--border);position:relative;z-index:1;}
 .ornament{font-size:1.3rem;color:var(--gold);letter-spacing:.6em;display:block;margin-bottom:.4rem;opacity:.7;}
 h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-light);letter-spacing:.2em;}
-.tagline{color:var(--muted);font-size:.95rem;font-style:italic;margin-top:.3rem;}
+.tagline{color:var(--muted);font-size:.88rem;font-family:'Libre Baskerville',serif;font-style:italic;margin-top:.3rem;}
 
 /* VIEWS */
 .view{display:none;position:relative;z-index:1;}
@@ -31,40 +31,40 @@ h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-li
 .empty-state{max-width:500px;margin:5rem auto;text-align:center;padding:0 1.5rem;}
 .empty-icon{font-size:3rem;margin-bottom:1rem;opacity:.4;}
 .empty-title{font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:.6rem;}
-.empty-txt{color:var(--muted);font-size:.9rem;line-height:1.7;font-style:italic;}
+.empty-txt{color:var(--muted);font-size:.88rem;line-height:1.75;font-style:italic;}
 
 .qawwali-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.3rem;cursor:pointer;transition:all .25s;position:relative;overflow:hidden;}
 .qawwali-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(193,154,72,.04) 0%,transparent 60%);pointer-events:none;}
 .qawwali-card:hover{border-color:rgba(193,154,72,.45);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.4);}
-.card-title{font-family:'Noto Nastaliq Urdu',serif;font-size:1.2rem;color:var(--gold-light);direction:rtl;text-align:right;margin-bottom:.4rem;line-height:1.5;}
-.card-artist{font-size:.85rem;color:var(--muted);font-style:italic;margin-bottom:.6rem;}
-.card-lang{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);opacity:.6;}
+.card-title{font-family:'Noto Nastaliq Urdu',serif;font-size:1.2rem;color:var(--gold-light);direction:rtl;text-align:right;margin-bottom:.5rem;line-height:1.6;}
+.card-english{font-family:'Libre Baskerville',serif;font-size:.88rem;color:var(--muted);font-weight:400;}
 .card-arrow{position:absolute;bottom:1rem;right:1rem;color:var(--gold);opacity:.4;font-size:1rem;}
 
 /* QAWWALI VIEW */
 .qawwali-view-inner{max-width:920px;margin:0 auto;padding:0 0 4rem;}
-
 .qv-header{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:.8rem;}
 .qv-title-block .qt{font-family:'Cinzel',serif;font-size:1.15rem;color:var(--gold-light);font-weight:400;}
-.qv-title-block .qm{color:var(--muted);font-size:.85rem;font-style:italic;margin-top:.15rem;}
+.qv-title-block .qm{color:var(--gold);opacity:.7;font-size:.82rem;font-family:'Libre Baskerville',serif;margin-top:.2rem;}
 .btn-back{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:.45rem .9rem;font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
 .btn-back:hover{border-color:var(--gold);color:var(--gold);}
 
-/* Audio */
-.audio-bar{padding:.85rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:.8rem;}
-.play-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold);font-size:.85rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;}
-.play-btn:hover{background:var(--gold);color:var(--bg);}
-.audio-track{flex:1;height:3px;background:rgba(193,154,72,.15);border-radius:3px;cursor:pointer;position:relative;}
+/* Audio — centered YouTube + info below */
+.audio-bar{border-bottom:1px solid var(--border);}
+.yt-wrap{width:100%;max-width:760px;margin:0 auto;aspect-ratio:16/9;background:#000;}
+.yt-meta{display:flex;align-items:center;justify-content:center;gap:1.5rem;padding:.6rem 1.5rem;border-top:1px solid var(--border);}
+.audio-track{flex:1;max-width:400px;height:3px;background:rgba(193,154,72,.15);border-radius:3px;cursor:pointer;position:relative;}
 .audio-fill{height:100%;background:var(--gold);border-radius:3px;width:0%;pointer-events:none;transition:width .1s linear;}
-.audio-time{font-size:.78rem;color:var(--muted);flex-shrink:0;min-width:90px;text-align:right;}
+.audio-time{font-size:.78rem;color:var(--muted);font-family:'Libre Baskerville',serif;white-space:nowrap;}
+.yt-link{font-size:.75rem;color:var(--gold);opacity:.6;text-decoration:none;font-family:'Libre Baskerville',serif;white-space:nowrap;}
+.yt-link:hover{opacity:1;}
 
 /* Overview */
 .overview-card{background:var(--surface);margin:1.2rem 1.5rem;border:1px solid var(--border);border-radius:10px;padding:1.2rem 1.4rem;}
-.overview-lbl{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;color:var(--gold);opacity:.7;text-transform:uppercase;margin-bottom:.5rem;}
-.overview-txt{font-size:.95rem;line-height:1.85;opacity:.85;}
+.overview-lbl{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;color:var(--gold);opacity:.7;text-transform:uppercase;margin-bottom:.6rem;}
+.overview-txt{font-size:.92rem;line-height:1.9;color:var(--text);font-family:'Libre Baskerville',serif;}
 
 /* Legend */
-.legend{display:flex;flex-wrap:wrap;gap:.8rem;padding:.5rem 1.5rem;border-bottom:1px solid var(--border);font-size:.72rem;}
+.legend{display:flex;flex-wrap:wrap;gap:.8rem;padding:.5rem 1.5rem;border-bottom:1px solid var(--border);font-size:.75rem;font-family:'Libre Baskerville',serif;}
 .legend-item{display:flex;align-items:center;gap:.35rem;color:var(--muted);}
 .legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
 
@@ -101,14 +101,14 @@ h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-li
 .type-alap .card-badge{color:var(--alap);border-color:rgba(154,94,200,.3);background:rgba(154,94,200,.07);}
 .type-instrumental .card-badge{color:var(--instr);border-color:rgba(200,94,94,.3);background:rgba(200,94,94,.07);}
 .type-tarana .card-badge{color:var(--tarana);border-color:rgba(94,138,200,.3);background:rgba(94,138,200,.07);}
-.card-ts{font-size:.75rem;color:var(--muted);font-style:italic;}
+.card-ts{font-size:.78rem;color:var(--muted);font-style:italic;font-family:'Libre Baskerville',serif;}
 .card-urdu{font-family:'Noto Nastaliq Urdu',serif;font-size:1.1rem;line-height:1.9;margin-bottom:.35rem;text-align:right;direction:rtl;}
-.card-roman{font-size:.82rem;color:var(--muted);margin-bottom:.35rem;}
-.card-trans{font-size:.95rem;color:var(--gold);font-style:italic;margin-bottom:.7rem;padding-bottom:.7rem;border-bottom:1px solid var(--border);}
-.card-expl{font-size:.9rem;line-height:1.8;opacity:.85;}
+.card-roman{font-size:.82rem;color:var(--muted);margin-bottom:.35rem;font-family:'Libre Baskerville',serif;}
+.card-trans{font-size:.92rem;color:var(--gold);font-style:italic;margin-bottom:.7rem;padding-bottom:.7rem;border-bottom:1px solid var(--border);font-family:'Libre Baskerville',serif;}
+.card-expl{font-size:.88rem;line-height:1.9;color:var(--text);font-family:'Libre Baskerville',serif;}
 
 /* Loading */
-.loading{text-align:center;padding:4rem 1rem;color:var(--muted);font-style:italic;}
+.loading{text-align:center;padding:4rem 1rem;color:var(--muted);font-style:italic;font-family:'Libre Baskerville',serif;}
 </style>
 </head>
 <body>
@@ -135,12 +135,15 @@ h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-li
     </div>
 
     <div class="audio-bar">
-      <div id="yt-embed-wrap" style="width:100%;aspect-ratio:16/9;background:#000;"></div>
-      <div style="display:flex;align-items:center;gap:.8rem;padding:.7rem 1.5rem;">
+      <div class="yt-wrap">
+        <div id="yt-embed-wrap" style="width:100%;height:100%;background:#000;"></div>
+      </div>
+      <div class="yt-meta">
         <div class="audio-track" id="audioTrack" onclick="seekAudio(event)">
           <div class="audio-fill" id="audioFill"></div>
         </div>
         <div class="audio-time" id="audioTime">0:00 / 0:00</div>
+        <a id="ytExternalLink" class="yt-link" href="#" target="_blank">↗ YouTube</a>
       </div>
     </div>
 
@@ -206,8 +209,7 @@ function renderLibrary() {
     card.className = 'qawwali-card';
     card.innerHTML = `
       <div class="card-title">${entry.title}</div>
-      <div class="card-artist">${[entry.artist, entry.poet?'Poetry by '+entry.poet:''].filter(Boolean).join(' · ')}</div>
-      <div class="card-lang">${entry.language||''}</div>
+      <div class="card-english">${entry.artist || ''}</div>
       <div class="card-arrow">→</div>
     `;
     card.onclick = () => openQawwali(i);
@@ -248,6 +250,9 @@ function renderQawwaliView(data) {
   const meta = [data.artist, data.poet?'Poetry by '+data.poet:'', data.language].filter(Boolean);
   document.getElementById('qvMeta').textContent = meta.join(' · ');
   document.getElementById('qvOverview').textContent = data.overall_summary || '';
+  // Set YouTube external link
+  const ytLink = document.getElementById('ytExternalLink');
+  if (ytLink && data.youtube_url) ytLink.href = data.youtube_url;
 
   const typeLabels = { lyric:'Lyrical', alap:'Alaap', instrumental:'Instrumental', tarana:'Tarana' };
 
