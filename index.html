@@ -207,9 +207,10 @@ function renderLibrary() {
   library.forEach((entry, i) => {
     const card = document.createElement('div');
     card.className = 'qawwali-card';
+    const artistClean = cleanField(entry.artist);
     card.innerHTML = `
-      <div class="card-title">${entry.title}</div>
-      <div class="card-english">${entry.artist || ''}</div>
+      <div class="card-title">${entry.title || ''}</div>
+      ${artistClean ? `<div class="card-english">${artistClean}</div>` : ''}
       <div class="card-arrow">→</div>
     `;
     card.onclick = () => openQawwali(i);
@@ -217,6 +218,13 @@ function renderLibrary() {
   });
   content.innerHTML = '';
   content.appendChild(grid);
+}
+
+function cleanField(val) {
+  if (!val) return '';
+  const lower = val.toLowerCase().trim();
+  if (lower === 'unknown' || lower === 'to be confirmed' || lower === 'n/a' || lower === '-') return '';
+  return val.trim();
 }
 
 function openQawwali(idx) {
@@ -231,7 +239,7 @@ function openQawwali(idx) {
     renderQawwaliView(currentEntry);
   } catch(e) {
     console.error('openQawwali error:', e);
-    alert('Error opening qawwali: ' + e.message);
+    // No alert — just log and continue
   }
 }
 
@@ -247,8 +255,13 @@ function renderQawwaliView(data) {
   console.log('qvTitle el:', document.getElementById('qvTitle'));
   console.log('qawwaliView active:', document.getElementById('qawwaliView').classList.contains('active'));
   document.getElementById('qvTitle').textContent = data.title || '';
-  const meta = [data.artist, data.poet?'Poetry by '+data.poet:'', data.language].filter(Boolean);
-  document.getElementById('qvMeta').textContent = meta.join(' · ');
+  // Only show meta fields that have real content — skip unknown/empty
+  const metaParts = [
+    cleanField(data.artist),
+    cleanField(data.poet) ? 'Poetry by ' + cleanField(data.poet) : '',
+    cleanField(data.language)
+  ].filter(Boolean);
+  document.getElementById('qvMeta').textContent = metaParts.join(' · ');
   document.getElementById('qvOverview').textContent = data.overall_summary || '';
   // Set YouTube external link
   const ytLink = document.getElementById('ytExternalLink');
