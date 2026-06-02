@@ -218,12 +218,17 @@ function renderLibrary() {
 }
 
 function openQawwali(idx) {
-  currentEntry = library[idx];
-  stopYT();
-  renderQawwaliView(currentEntry);
-  document.getElementById('libraryView').classList.remove('active');
-  document.getElementById('qawwaliView').classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  try {
+    currentEntry = library[idx];
+    stopYT();
+    renderQawwaliView(currentEntry);
+    document.getElementById('libraryView').classList.remove('active');
+    document.getElementById('qawwaliView').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } catch(e) {
+    console.error('openQawwali error:', e);
+    alert('Error opening qawwali: ' + e.message);
+  }
 }
 
 function showLibrary() {
@@ -408,9 +413,11 @@ function highlightLine(currentTime) {
 }
 
 function stopYT() {
-  clearInterval(ytInterval);
-  if (ytPlayer) { try { ytPlayer.stopVideo(); } catch(e){} }
+  try { clearInterval(ytInterval); } catch(e) {}
+  try { if (ytPlayer) ytPlayer.stopVideo(); } catch(e) {}
+  try { clearInterval(ytUpdateInterval); } catch(e) {}
   isPlaying = false;
+  ytPlayer = null;
 }
 
 function extractVideoId(url) {
