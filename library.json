@@ -1,1 +1,363 @@
-[]
+[
+  {
+    "id": 1780399423556,
+    "title": "دلہے کا سہرا",
+    "artist": "Unknown / To Be Confirmed",
+    "poet": "Unknown",
+    "language": "Urdu with Hindi-influenced vocabulary, Punjabi undertones in the bidaai verse",
+    "youtube_url": "https://www.youtube.com/watch?v=g-d8wAIITdc",
+    "overall_summary": "Dulhe Ka Sehra is a wedding song that moves between two emotional worlds simultaneously — the joy and pageantry of the groom's arrival and the bride's inner anguish of departure. The song is structured around the central tension of a bride who is celebrated publicly but grieving privately, torn between her new life and the home she is leaving forever. The bidaai verse — addressed directly to the father — anchors the song in one of the most emotionally significant moments in South Asian cultural and spiritual life. The refrain lines, cycling through joy and sorrow, mirror the qawwali tradition of holding opposing truths in the same breath.",
+    "sections": [
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 1 — Opening Verse, Line 1",
+        "urdu_text": "شہنائیوں کی صدا کہہ رہی ہے، خوشی کی مبارک گھڑی آ گئی ہے",
+        "romanization": "Shehnaiyon ki sada keh rahi hai, khushi ki mubarak ghari aa gayi hai",
+        "translation": "The shehnai calls out its ancient song — the blessed hour of joy has finally arrived",
+        "explanation": "The shehnai is the quintessential instrument of auspicious occasions in South Asian tradition, particularly weddings and shrine music. Its invocation here is not merely descriptive — the shehnai is understood to carry a sacred voice, announcing divine blessing. The phrase 'mubarak ghari' echoes classical Urdu poetic tradition where the auspicious moment is treated as a gift from God.",
+        "start": 21.41
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 1 — Opening Verse, Line 2",
+        "urdu_text": "سجی سرخ جوڑے میں چاند سی دلہن، زمین پہ فلک سے پری آ گئی ہے",
+        "romanization": "Saji surkh jode mein chaand si dulhan, zameen pe falak se pari aa gayi hai",
+        "translation": "Adorned in her crimson bridal dress, a moon-faced bride — a fairy descended from the heavens to earth",
+        "explanation": "The image of the bride as a celestial being — 'pari' meaning fairy or angel — descending from 'falak' (the sky/heavens) to earth is a deeply rooted metaphor in Urdu and Persian poetry. The red bridal dress is the traditional colour of South Asian wedding attire, signifying fertility, auspiciousness, and life. The comparison to the moon ('chaand si') is among the most classical of Urdu poetic compliments for feminine beauty.",
+        "start": 42.82
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 2 — Chorus",
+        "urdu_text": "دولہے کا سہرا سہانا لگتا ہے\nدولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے\nدولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے",
+        "romanization": "Dulhe ka sehra suhana lagta hai\nDulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai\nDulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai",
+        "translation": "The groom's sehra glows with a beauty all its own — the groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely — the groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely",
+        "explanation": "The sehra is the ornamental veil of flowers and decorative strings worn by the groom over his face — one of the most iconic symbols of the South Asian groom. It both adorns and conceals, creating a poetic resonance with the song's broader theme of what is visible and what is hidden. The triple repetition of the sehra line before the final pairing is a classic qawwali intensification device — the phrase is sung until it stops being a description and becomes an incantation.",
+        "start": 415
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 3 — Refrain",
+        "urdu_text": "پل بھر میں کیسے بدلتے ہیں رشتے\nپل بھر میں کیسے بدلتے ہیں رشتے\nاب تو ہر اپنا بیگانا لگتا ہے",
+        "romanization": "Pal bhar mein kaise badalte hain rishtey\nPal bhar mein kaise badalte hain rishtey\nAb to har apna begana lagta hai",
+        "translation": "How swiftly relationships transform — in the span of a single breath — how swiftly relationships transform — now even those closest to my heart feel like strangers",
+        "explanation": "The doubling of 'pal bhar mein kaise badalte hain rishtey' before the resolution into 'begana' is structurally powerful — the question is asked twice, as if the mind cannot quite believe what it is witnessing, before the answer arrives with quiet devastation. 'Apna' and 'begana' — one's own and a stranger — are among the most emotionally resonant antonyms in Urdu, and their collision here captures the bride's liminal state with precision.",
+        "start": 405
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 4 — Chorus",
+        "urdu_text": "دولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے\nدولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے",
+        "romanization": "Dulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai\nDulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai",
+        "translation": "The groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely — the groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely",
+        "explanation": "The chorus returns in a tighter, more balanced form — sehra and deewana alternating as equals. After the philosophical weight of the refrain, this return to the chorus is not escapism but resolution: the beauty of the moment and the turmoil of the heart are held together, neither cancelling the other out.",
+        "start": 415
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 5 — Verse, Lines 1–2 (repeated)",
+        "urdu_text": "سات پھیروں سے بنا جنموں کا یہ بندھن\nپیار سے جوڑا ہے رب نے پریت کا دامن\nسات پھیروں سے بنا جنموں کا یہ بندھن\nپیار سے جوڑا ہے رب نے پریت کا دامن",
+        "romanization": "Saat pheron se bana janmon ka yeh bandhan\nPyaar se joda hai Rab ne preet ka daaman\nSaat pheron se bana janmon ka yeh bandhan\nPyaar se joda hai Rab ne preet ka daaman",
+        "translation": "From seven sacred circles, a bond woven across lifetimes — with love, God Himself has joined the hem of devotion",
+        "explanation": "The saat phere — seven circumambulations around the sacred fire — is the central ritual of the Hindu wedding ceremony and has deeply permeated South Asian Muslim and Sikh wedding culture as well. Their repetition here is not accidental — in qawwali and devotional music, the repeating of a sacred image mirrors the act of circumambulation itself, circling the truth until it is fully absorbed. 'Preet' is a Punjabi and Braj Bhasha word for love, and 'daaman' — the hem — is a Sufi metaphor for the bond between devotee and beloved. God tying this hem elevates the marriage to a sacred covenant.",
+        "start": 197
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 5 — Verse, Line 3",
+        "urdu_text": "ہیں نئی رسمیں، نئی قسمیں، نئی الجھن",
+        "romanization": "Hain nayi rasmein, nayi qasmein, nayi uljhan",
+        "translation": "New rituals, new vows, new entanglements of the heart",
+        "explanation": "The triple structure — rasmein, qasmein, uljhan — builds rhythmically and emotionally. 'Uljhan' (entanglement, confusion) is the honest admission that alongside the beauty of new beginnings comes genuine complexity. This candour is characteristic of the best South Asian wedding poetry, which does not sentimentalise but acknowledges the full human experience.",
+        "start": 208
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 5 — Verse, Line 4",
+        "urdu_text": "ہونٹ ہیں خاموش لیکن کہہ رہی دھڑکن",
+        "romanization": "Honth hain khamosh lekin keh rahi dhadkan",
+        "translation": "The lips hold their silence — but the heartbeat speaks everything",
+        "explanation": "The contrast between outward silence and inner eloquence is a central theme in Sufi poetry — the idea that the deepest truths cannot be spoken but only felt. The dhadkan (heartbeat) as a voice is a beautiful image: the body itself bears witness when words fail.",
+        "start": 213.57
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 6 — Refrain (Extended)",
+        "urdu_text": "مشکل عشقوں کو چھپانا لگتا ہے\nمشکل عشقوں کو چھپانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے\nپل بھر میں کیسے بدلتے ہیں رشتے\nاب تو ہر اپنا بیگانا لگتا ہے",
+        "romanization": "Mushkil ishqon ko chhupana lagta hai\nMushkil ishqon ko chhupana lagta hai\nDulhan ka to dil deewana lagta hai\nPal bhar mein kaise badalte hain rishtey\nAb to har apna begana lagta hai",
+        "translation": "How difficult it is to conceal the loves that live within — how difficult it is to conceal the loves that live within — the bride's heart has lost itself entirely — how swiftly relationships transform in a single breath — now even those closest feel like strangers",
+        "explanation": "The plural 'ishqon' — loves — suggests layers of attachment: love for the father, the mother, the family home, the childhood, and simultaneously the new love for the groom. The doubled line of concealment followed by the deewana heart is a moment of cracking open — the effort to hide is named twice and then abandoned as the heart's madness asserts itself. The refrain then cycles back through its philosophical core lines, now carrying the full weight of everything the song has built.",
+        "start": 269.16
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 7 — Chorus",
+        "urdu_text": "دولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے\nدولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے",
+        "romanization": "Dulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai\nDulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai",
+        "translation": "The groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely — the groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely",
+        "explanation": "The chorus returns again as a stabilising force after the emotional turbulence of the extended refrain. Its repetition here deepens rather than dulls — by now these two lines carry the accumulated emotional history of the entire song, and their pairing feels less like a chorus and more like a breath of acceptance.",
+        "start": 415
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 8 — Verse (Bidaai), Lines 1–2",
+        "urdu_text": "میں تیری باہوں کے جھولے پہ پلی بابل\nجا رہی ہوں چھوڑ کے تیری گلی بابل",
+        "romanization": "Main teri bahon ke jhoole pe pali babul\nJa rahi hoon chhod ke teri gali babul",
+        "translation": "I was raised in the cradle of your arms, my father — I am leaving now, leaving behind your street, my father",
+        "explanation": "'Babul' is the Punjabi and folk Urdu word for father, carrying a warmth and intimacy that the formal 'abu' or 'walid' cannot. The image of the father's arms as a 'jhoola' — a swing or cradle — is exquisitely tender, evoking the totality of childhood shelter and love. 'Gali' — the lane or street — is a metonym for the entire world of the paternal home. The bride is not just leaving a house but an entire mapped universe of selfhood.",
+        "start": 358.65
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 8 — Verse (Bidaai), Line 1 repeated three times",
+        "urdu_text": "میں تیری باہوں کے جھولے پہ پلی بابل\nمیں تیری باہوں کے جھولے پہ پلی بابل\nمیں تیری باہوں کے جھولے پہ پلی بابل",
+        "romanization": "Main teri bahon ke jhoole pe pali babul\nMain teri bahon ke jhoole pe pali babul\nMain teri bahon ke jhoole pe pali babul",
+        "translation": "I was raised in the cradle of your arms, my father",
+        "explanation": "The threefold repetition of this single line is the emotional peak of the bidaai section. In Sufi and devotional music, repetition of this kind is not redundancy — it is the sound of a truth being driven deeper into the heart with each iteration. By the third repetition, the line has ceased to be a statement and become a cry.",
+        "start": 358.65
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 8 — Verse (Bidaai), Line 2 repeated",
+        "urdu_text": "جا رہی ہوں چھوڑ کے تیری گلی بابل",
+        "romanization": "Ja rahi hoon chhod ke teri gali babul",
+        "translation": "I am leaving now, leaving behind your street, my father",
+        "explanation": "The return of the departure line after the threefold cry is devastating in its simplicity. The repetition has made the loss fully felt — and now the fact of leaving is stated again, quietly, as if the bride has finally accepted what she could not before.",
+        "start": 366.74
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 8 — Verse (Bidaai), Lines 7–8",
+        "urdu_text": "خوبصورت یہ زمانے یاد آئیں گے\nچاہ کے بھی ہم تمہیں نہ بھول پائیں گے",
+        "romanization": "Khoobsurat yeh zamaane yaad aayenge\nChaah ke bhi hum tumhein na bhool paayenge",
+        "translation": "These beautiful days will return to me as memory — even if we wished to forget you, we never could",
+        "explanation": "The shift to the future tense acknowledges that the present is already becoming the past even as it is being lived. 'Chaah ke bhi' — even if we wanted to — is a rhetorical impossibility that underscores the depth of the bond. The shift to 'hum' (we) from the singular 'main' (I) subtly universalises the sentiment — this is not just one bride's feeling but the shared truth of all who have passed through this moment.",
+        "start": 371.82
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 9 — Refrain (Final)",
+        "urdu_text": "مشکل دامن کو چھڑانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے\nمشکل دامن کو چھڑانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے\nپل بھر میں کیسے بدلتے ہیں رشتے\nاب تو ہر اپنا بیگانا لگتا ہے",
+        "romanization": "Mushkil daaman ko chhudana lagta hai\nDulhan ka to dil deewana lagta hai\nMushkil daaman ko chhudana lagta hai\nDulhan ka to dil deewana lagta hai\nPal bhar mein kaise badalte hain rishtey\nAb to har apna begana lagta hai",
+        "translation": "How difficult it is to pull free from the hem of love — the bride's heart has lost itself entirely — how difficult it is to pull free from the hem of love — and the bride's heart has lost itself entirely — how swiftly relationships transform in a single breath — now even those closest feel like strangers",
+        "explanation": "This final refrain replaces 'ishqon ko chhupana' (concealing loves) with 'daaman ko chhudana' (pulling free from the hem), completing the song's central metaphor arc. The daaman — the hem, the garment's edge — is what you hold when you cling to someone. The alternating structure of mushkil and deewana — difficult and mad — enacts the very struggle it describes: the heart pulls toward the father, then toward the groom, then toward the father again, before the final lines of estrangement close the circle.",
+        "start": 395
+      },
+      {
+        "type": "lyric",
+        "timestamp_hint": "Section 10 — Chorus",
+        "urdu_text": "دولہے کا سہرا سہانا لگتا ہے\nدلہن کا تو دل دیوانا لگتا ہے",
+        "romanization": "Dulhe ka sehra suhana lagta hai\nDulhan ka to dil deewana lagta hai",
+        "translation": "The groom's sehra glows with a beauty all its own — and the bride's heart has lost itself entirely",
+        "explanation": "The final chorus appears in its most stripped-back form — just one pair, unadorned. After all the repetition and intensification of everything that has come before, the song ends on the same two truths it began with: the sehra is beautiful, and the heart is lost. Nothing has been resolved because nothing needed to be — this is the human condition of the wedding day, held with honesty and grace.",
+        "start": 415
+      }
+    ],
+    "timestamps": [
+      {
+        "line": "[music]",
+        "start": 0
+      },
+      {
+        "line": "شہنائیوں کی صدا کہہ رہی ہے، خوشی کی مبارک گھڑی آ گئی ہے",
+        "start": 21.41
+      },
+      {
+        "line": "سجی سرخ جوڑے میں چاند سی دلہن، زمین پہ فلک سے پری آ گئی ہے",
+        "start": 42.82
+      },
+      {
+        "line": "[music]",
+        "start": 60
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 97.82
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 103.4
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 108.78
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 113.8
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 117.9
+      },
+      {
+        "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
+        "start": 124.57
+      },
+      {
+        "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
+        "start": 130
+      },
+      {
+        "line": "اب تو ہر اپنا بیگانا لگتا ہے",
+        "start": 134
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 139.65
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 145
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 150
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 155
+      },
+      {
+        "line": "[music]",
+        "start": 160
+      },
+      {
+        "line": "سات پھیروں سے بنا جنموں کا یہ بندھن",
+        "start": 182
+      },
+      {
+        "line": "پیار سے جوڑا ہے رب نے پریت کا دامن",
+        "start": 186
+      },
+      {
+        "line": "سات پھیروں سے بنا جنموں کا یہ بندھن",
+        "start": 197
+      },
+      {
+        "line": "پیار سے جوڑا ہے رب نے پریت کا دامن",
+        "start": 202
+      },
+      {
+        "line": "ہیں نئی رسمیں، نئی قسمیں، نئی الجھن",
+        "start": 208
+      },
+      {
+        "line": "ہونٹ ہیں خاموش لیکن کہہ رہی دھڑکن",
+        "start": 213.57
+      },
+      {
+        "line": "[music]",
+        "start": 219
+      },
+      {
+        "line": "مشکل عشقوں کو چھپانا لگتا ہے",
+        "start": 264.64
+      },
+      {
+        "line": "مشکل عشقوں کو چھپانا لگتا ہے",
+        "start": 269.16
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 273.82
+      },
+      {
+        "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
+        "start": 278.69
+      },
+      {
+        "line": "اب تو ہر اپنا بیگانا لگتا ہے",
+        "start": 283.56
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 290.1
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 294.04
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 299.16
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 304.54
+      },
+      {
+        "line": "[music]",
+        "start": 310
+      },
+      {
+        "line": "میں تیری باہوں کے جھولے پہ پلی بابل",
+        "start": 330.18
+      },
+      {
+        "line": "جا رہی ہوں چھوڑ کے تیری گلی بابل",
+        "start": 335.22
+      },
+      {
+        "line": "میں تیری باہوں کے جھولے پہ پلی بابل",
+        "start": 341.06
+      },
+      {
+        "line": "میں تیری باہوں کے جھولے پہ پلی بابل",
+        "start": 350.56
+      },
+      {
+        "line": "میں تیری باہوں کے جھولے پہ پلی بابل",
+        "start": 358.65
+      },
+      {
+        "line": "جا رہی ہوں چھوڑ کے تیری گلی بابل",
+        "start": 366.74
+      },
+      {
+        "line": "خوبصورت یہ زمانے یاد آئیں گے",
+        "start": 371.82
+      },
+      {
+        "line": "چاہ کے بھی ہم تمہیں نہ بھول پائیں گے",
+        "start": 377.18
+      },
+      {
+        "line": "مشکل دامن کو چھڑانا لگتا ہے",
+        "start": 384.76
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 390
+      },
+      {
+        "line": "مشکل دامن کو چھڑانا لگتا ہے",
+        "start": 395
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 400
+      },
+      {
+        "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
+        "start": 405
+      },
+      {
+        "line": "اب تو ہر اپنا بیگانا لگتا ہے",
+        "start": 410
+      },
+      {
+        "line": "دولہے کا سہرا سہانا لگتا ہے",
+        "start": 415
+      },
+      {
+        "line": "دلہن کا تو دل دیوانا لگتا ہے",
+        "start": 420
+      },
+      {
+        "line": "[music]",
+        "start": 425
+      }
+    ]
+  }
+]
