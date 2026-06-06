@@ -1,9 +1,9 @@
 [
   {
-    "id": 1780399423556,
+    "id": 1780762045809,
     "title": "دلہے کا سہرا",
     "artist": "Unknown / To Be Confirmed",
-    "poet": "Unknown",
+    "poet": "Sameer Anjan",
     "language": "Urdu with Hindi-influenced vocabulary, Punjabi undertones in the bidaai verse",
     "youtube_url": "https://www.youtube.com/watch?v=g-d8wAIITdc",
     "overall_summary": "Dulhe Ka Sehra is a wedding song that moves between two emotional worlds simultaneously — the joy and pageantry of the groom's arrival and the bride's inner anguish of departure. The song is structured around the central tension of a bride who is celebrated publicly but grieving privately, torn between her new life and the home she is leaving forever. The bidaai verse — addressed directly to the father — anchors the song in one of the most emotionally significant moments in South Asian cultural and spiritual life. The refrain lines, cycling through joy and sorrow, mirror the qawwali tradition of holding opposing truths in the same breath.",
@@ -15,7 +15,7 @@
         "romanization": "Shehnaiyon ki sada keh rahi hai, khushi ki mubarak ghari aa gayi hai",
         "translation": "The shehnai calls out its ancient song — the blessed hour of joy has finally arrived",
         "explanation": "The shehnai is the quintessential instrument of auspicious occasions in South Asian tradition, particularly weddings and shrine music. Its invocation here is not merely descriptive — the shehnai is understood to carry a sacred voice, announcing divine blessing. The phrase 'mubarak ghari' echoes classical Urdu poetic tradition where the auspicious moment is treated as a gift from God.",
-        "start": 21.41
+        "start": 27
       },
       {
         "type": "lyric",
@@ -42,7 +42,7 @@
         "romanization": "Pal bhar mein kaise badalte hain rishtey\nPal bhar mein kaise badalte hain rishtey\nAb to har apna begana lagta hai",
         "translation": "How swiftly relationships transform — in the span of a single breath — how swiftly relationships transform — now even those closest to my heart feel like strangers",
         "explanation": "The doubling of 'pal bhar mein kaise badalte hain rishtey' before the resolution into 'begana' is structurally powerful — the question is asked twice, as if the mind cannot quite believe what it is witnessing, before the answer arrives with quiet devastation. 'Apna' and 'begana' — one's own and a stranger — are among the most emotionally resonant antonyms in Urdu, and their collision here captures the bride's liminal state with precision.",
-        "start": 405
+        "start": 404
       },
       {
         "type": "lyric",
@@ -69,7 +69,7 @@
         "romanization": "Hain nayi rasmein, nayi qasmein, nayi uljhan",
         "translation": "New rituals, new vows, new entanglements of the heart",
         "explanation": "The triple structure — rasmein, qasmein, uljhan — builds rhythmically and emotionally. 'Uljhan' (entanglement, confusion) is the honest admission that alongside the beauty of new beginnings comes genuine complexity. This candour is characteristic of the best South Asian wedding poetry, which does not sentimentalise but acknowledges the full human experience.",
-        "start": 208
+        "start": 207
       },
       {
         "type": "lyric",
@@ -78,7 +78,7 @@
         "romanization": "Honth hain khamosh lekin keh rahi dhadkan",
         "translation": "The lips hold their silence — but the heartbeat speaks everything",
         "explanation": "The contrast between outward silence and inner eloquence is a central theme in Sufi poetry — the idea that the deepest truths cannot be spoken but only felt. The dhadkan (heartbeat) as a voice is a beautiful image: the body itself bears witness when words fail.",
-        "start": 213.57
+        "start": 213
       },
       {
         "type": "lyric",
@@ -105,7 +105,7 @@
         "romanization": "Main teri bahon ke jhoole pe pali babul\nJa rahi hoon chhod ke teri gali babul",
         "translation": "I was raised in the cradle of your arms, my father — I am leaving now, leaving behind your street, my father",
         "explanation": "'Babul' is the Punjabi and folk Urdu word for father, carrying a warmth and intimacy that the formal 'abu' or 'walid' cannot. The image of the father's arms as a 'jhoola' — a swing or cradle — is exquisitely tender, evoking the totality of childhood shelter and love. 'Gali' — the lane or street — is a metonym for the entire world of the paternal home. The bride is not just leaving a house but an entire mapped universe of selfhood.",
-        "start": 358.65
+        "start": 361
       },
       {
         "type": "lyric",
@@ -114,7 +114,7 @@
         "romanization": "Main teri bahon ke jhoole pe pali babul\nMain teri bahon ke jhoole pe pali babul\nMain teri bahon ke jhoole pe pali babul",
         "translation": "I was raised in the cradle of your arms, my father",
         "explanation": "The threefold repetition of this single line is the emotional peak of the bidaai section. In Sufi and devotional music, repetition of this kind is not redundancy — it is the sound of a truth being driven deeper into the heart with each iteration. By the third repetition, the line has ceased to be a statement and become a cry.",
-        "start": 358.65
+        "start": 361
       },
       {
         "type": "lyric",
@@ -160,7 +160,7 @@
       },
       {
         "line": "شہنائیوں کی صدا کہہ رہی ہے، خوشی کی مبارک گھڑی آ گئی ہے",
-        "start": 21.41
+        "start": 27
       },
       {
         "line": "سجی سرخ جوڑے میں چاند سی دلہن، زمین پہ فلک سے پری آ گئی ہے",
@@ -176,7 +176,7 @@
       },
       {
         "line": "دولہے کا سہرا سہانا لگتا ہے",
-        "start": 103.4
+        "start": 103
       },
       {
         "line": "دلہن کا تو دل دیوانا لگتا ہے",
@@ -184,15 +184,15 @@
       },
       {
         "line": "دولہے کا سہرا سہانا لگتا ہے",
-        "start": 113.8
+        "start": 113
       },
       {
         "line": "دلہن کا تو دل دیوانا لگتا ہے",
-        "start": 117.9
+        "start": 119
       },
       {
         "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
-        "start": 124.57
+        "start": 124
       },
       {
         "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
@@ -200,11 +200,11 @@
       },
       {
         "line": "اب تو ہر اپنا بیگانا لگتا ہے",
-        "start": 134
+        "start": 135
       },
       {
         "line": "دولہے کا سہرا سہانا لگتا ہے",
-        "start": 139.65
+        "start": 140
       },
       {
         "line": "دلہن کا تو دل دیوانا لگتا ہے",
@@ -228,7 +228,7 @@
       },
       {
         "line": "پیار سے جوڑا ہے رب نے پریت کا دامن",
-        "start": 186
+        "start": 187
       },
       {
         "line": "سات پھیروں سے بنا جنموں کا یہ بندھن",
@@ -240,15 +240,15 @@
       },
       {
         "line": "ہیں نئی رسمیں، نئی قسمیں، نئی الجھن",
-        "start": 208
+        "start": 207
       },
       {
         "line": "ہونٹ ہیں خاموش لیکن کہہ رہی دھڑکن",
-        "start": 213.57
+        "start": 213
       },
       {
         "line": "[music]",
-        "start": 219
+        "start": 218
       },
       {
         "line": "مشکل عشقوں کو چھپانا لگتا ہے",
@@ -308,7 +308,7 @@
       },
       {
         "line": "میں تیری باہوں کے جھولے پہ پلی بابل",
-        "start": 358.65
+        "start": 361
       },
       {
         "line": "جا رہی ہوں چھوڑ کے تیری گلی بابل",
@@ -324,11 +324,11 @@
       },
       {
         "line": "مشکل دامن کو چھڑانا لگتا ہے",
-        "start": 384.76
+        "start": 382
       },
       {
         "line": "دلہن کا تو دل دیوانا لگتا ہے",
-        "start": 390
+        "start": 388
       },
       {
         "line": "مشکل دامن کو چھڑانا لگتا ہے",
@@ -340,11 +340,11 @@
       },
       {
         "line": "پل بھر میں کیسے بدلتے ہیں رشتے",
-        "start": 405
+        "start": 404
       },
       {
         "line": "اب تو ہر اپنا بیگانا لگتا ہے",
-        "start": 410
+        "start": 409
       },
       {
         "line": "دولہے کا سہرا سہانا لگتا ہے",
