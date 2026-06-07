@@ -1,0 +1,535 @@
+{
+  "id": "ye-jo-halka-halka-suroor-hai",
+  "english_title": "Ye Jo Halka Halka Suroor Hai",
+  "urdu_title": "یہ جو ہلکا ہلکا سرور ہے",
+  "artist": "Nusrat Fateh Ali Khan",
+  "poet": "Abdul Hameed Adam",
+  "language": "Urdu",
+  "youtube_url": "https://www.youtube.com/watch?v=UIPXHsUXVH0",
+  "overall_summary": "This qawwali is one of the most beloved compositions in the Nusrat Fateh Ali Khan canon, built around the central Sufi metaphor of divine intoxication — the lover rendered helplessly drunk not by wine but by the gaze of the Beloved. The poet Abdul Hameed Adam weaves together the classical Persian-Urdu imagery of the saqi, the rind, the zahid, and the maikhanah to construct a spiritual world in which all conventional religious obligation dissolves in the face of ishq. The qawwali moves through multiple emotional registers — playful, ecstatic, defiant, tender, heartbroken, and finally comic — reflecting the full arc of the mystic lover's experience. Nusrat's performance extends and deepens the written poem through improvisation, repetition, and the insertion of additional verses, transforming it into a living spiritual event rather than a recitation.",
+  "sections": [
+    {
+      "type": "lyric",
+      "timestamp_hint": "Opening Verse",
+      "urdu_text": "ساقی کی ہر نگاہ پہ بل کھا کے پی گیا\nلہروں سے کھیلتا ہوا لہرا کے پی گیا\nاے رحمتِ تمام، میری ہر خطا معاف\nمیں انتہائے شوق میں گھبرا کے پی گیا\nاے رحمتِ تمام، میری ہر خطا معاف\nمیں انتہائے شوق میں گھبرا کے پی گیا\nپیتا بغیر اِذن، پیتا بغیر اِذن، یہ کب تھی میری مجال؟\nدر پردہ چشمِ یار کی شہ پا کے پی گیا\nزاہد یہ میری شوخیِ رِندان نہ دیکھ نہ\nتوبہ کو توڑ تار کے تھرّا کے پی گیا",
+      "romanization": "Saqi ki har nigah pe bal kha ke pi gaya\nLehron se khelta hua lehra ke pi gaya\nAe rehmat-e-tamam, meri har khata maaf\nMain intiha-e-shauq mein ghabra ke pi gaya\nAe rehmat-e-tamam, meri har khata maaf\nMain intiha-e-shauq mein ghabra ke pi gaya\nPita baghair izn, pita baghair izn, yeh kab thi meri majaal?\nDar parda chashm-e-yaar ki shah pa ke pi gaya\nZahid yeh meri shokhiye rindan na dekh na\nTauba ko tor taar ke thrra ke pi gaya",
+      "translation": "At every glance of the saqi, I swayed and drank\nPlaying upon the waves, swirling, I drank\nO mercy of the universe, forgive my every transgression\nIn the extremity of my longing, overwhelmed, I drank\nO mercy of the universe, forgive my every transgression\nIn the extremity of my longing, overwhelmed, I drank\nDrinking without permission — when was this ever within my power?\nI found encouragement in the secret glance of my Beloved's eye, and drank\nO ascetic, do not look upon this audacity of mine, this rind-like boldness\nI shattered my vow of repentance to pieces, and trembling, I drank",
+      "explanation": "This opening verse establishes the entire spiritual universe of the qawwali in a single sweep. The saqi — the divine cupbearer, a figure for God or the spiritual master — does not force the wine upon the lover; a single glance is enough to make him sway and drink. The repeated plea 'ae rehmat-e-tamam, meri har khata maaf' is extraordinary in its audacity: the lover acknowledges his transgression of drinking without permission, yet immediately reveals that the permission was granted covertly through the Beloved's own secret glance — making God both the prohibition and the invitation simultaneously. The zahid couplet draws on one of the oldest tensions in Sufi poetry: the dry, legalistic ascetic who cannot understand that the rind's apparent transgression is in fact the deepest form of surrender. The word 'thrra ke' — trembling — is crucial: this is not defiant drinking but awed, overwhelmed drinking, the soul shaking before the magnitude of divine love.",
+      "start": 38
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Ghatayen Verse",
+      "urdu_text": "اودی اودی گھٹائیں آتی ہیں\nمطربوں کی نوائیں آتی ہیں\nکس کے گیسو کھلے ہیں ساون میں؟\nمہکی مہکی ہوائیں آتی ہیں\nآؤ سینے چمن میں رقص کریں\nساز لے کر گھٹائیں آتی ہیں",
+      "romanization": "Audi audi ghatayen aati hain\nMutribon ki nawayen aati hain\nKis ke gesu khule hain sawan mein?\nMehki mehki hawayen aati hain\nAao seene chaman mein raqs karen\nSaaz le kar ghatayen aati hain",
+      "translation": "Dark, dark monsoon clouds are rolling in\nThe melodies of the musicians are drifting near\nWhose tresses have come undone in the season of rain?\nFragrant, fragrant breezes are breathing through\nCome, let us dance in the garden of the heart\nThe clouds arrive bearing music within them",
+      "explanation": "This verse is a classical baramasa — a seasonal poem — in miniature, using the monsoon as a metaphor for the descent of divine grace and spiritual longing. The dark clouds in Urdu and Punjabi poetry are among the most potent symbols of the beloved's hair, of melancholy sweetness, and of the rains of mercy that revive the parched earth of the lover's heart. The question 'whose tresses have come undone in the sawan?' is deliberately unanswered — in Sufi poetry this ambiguity is intentional, the loose hair suggesting both the earthly beloved and the divine mystery unveiled. The invitation to dance in the garden of the heart places the whirling of sama — the devotional practice of the Sufis — within the inner landscape of the soul itself.",
+      "start": 189
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Suroor Verse",
+      "urdu_text": "دیکھ کر اُن کی آنکھوں کو کڑھنے والوں کو حیائیں آتی ہیں\nپاس رہتا ہے دور رہتا ہے، کوئی دل میں ضرور رہتا ہے\nجب سے دیکھا ہے تیری آنکھوں کو ہلکا ہلکا سرور رہتا ہے\nایسے رہتے ہیں وہ میرے دل میں جیسے ظلمت میں نور رہتا ہے\nاب عدم کا یہ حال ہے ہر وقت مست رہتا ہے چور رہتا ہے",
+      "romanization": "Dekh kar un ki aankhon ko karhne walon ko hayaen aati hain\nPaas rehta hai door rehta hai, koi dil mein zaroor rehta hai\nJab se dekha hai teri aankhon ko halka halka suroor rehta hai\nAise rehte hain wo mere dil mein jaise zulmat mein noor rehta hai\nAb adam ka yeh haal hai har waqt mast rehta hai choor rehta hai",
+      "translation": "Upon seeing those eyes, even those who burn with longing are overcome with shyness\nNear yet far, yet someone most certainly dwells within this heart\nEver since I beheld your eyes, a gentle, gentle intoxication lingers\nThey dwell in my heart the way light dwells within darkness\nNow this is Adam's state — forever intoxicated, forever undone",
+      "explanation": "This verse is the emotional and philosophical hinge of the qawwali, introducing the central image of halka halka suroor — the light, gentle, persistent intoxication that is not the crash of wine but the slow, permanent alteration of the soul transformed by divine vision. The paradox of 'paas rehta hai, door rehta hai' — near yet far — is one of the oldest formulations of the Sufi experience of God: the divine is simultaneously more intimate than one's own heartbeat and infinitely beyond reach. The final line uses the poet's pen name Adam (also meaning non-existence, عدم), a classical makhlas device that collapses the poet's identity into the state of fana — perpetual intoxication, perpetual dissolution.",
+      "start": 234
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Main Refrain",
+      "urdu_text": "یہ جو ہلکا ہلکا سرور ہے\nیہ تِری نظر کا قصور ہے\nکہ شراب پینا سکھا دیا",
+      "romanization": "Yeh jo halka halka suroor hai\nYeh teri nazar ka qasoor hai\nKeh sharaab peena sikha diya",
+      "translation": "This gentle, gentle intoxication that lingers —\nThis is the fault of your gaze\nThat taught me how to drink",
+      "explanation": "The refrain is the master stroke of the poem — the word 'qasoor' (fault, blame) is used with exquisite irony. The lover does not blame the Beloved in anger but in ecstatic gratitude: it is your fault that I am now permanently intoxicated, your fault that I have learned the art of divine love. The teaching of drinking — 'sikha diya' — frames the entire spiritual journey as an education received from the gaze of God, not from books or mosques or religious instruction. In qawwali performance this refrain functions as the structural anchor, returning again and again to deepen with each repetition.",
+      "start": 962.28
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Tire Pyar Ne Verse",
+      "urdu_text": "تِرے پیار نے، تِری چاہ نے\nتِری بہکی بہکی نگاہ نے\nمجھے اِک شرابی بنا دیا",
+      "romanization": "Tere pyaar ne, teri chaah ne\nTeri bahki bahki nigah ne\nMujhe ik sharabi bana diya",
+      "translation": "Your love, your longing for me\nYour reeling, reeling glance\nMade of me a drunkard complete",
+      "explanation": "This verse escalates the central metaphor: the lover has not merely been taught to drink — he has been made into a drunkard, his very identity transformed. The word 'bahki bahki' (reeling, intoxicating, unsteady) applied to the Beloved's glance is remarkable — it suggests that the divine gaze itself is not serene but intoxicated, as if God looks upon the lover with the same overwhelming love that the lover feels. This reciprocity of divine intoxication is a distinctly Sufi theological position: the love between God and the soul is mutual and equal in its intensity.",
+      "start": 381
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Sharab Kaisi Verse",
+      "urdu_text": "شراب کیسی، خمار کیسا، یہ سب تمہاری نوازشیں ہیں\nپلائی ہے کس نظر سے تُو نے کہ مجھ کو اپنی خبر نہیں ہے\nتِری بہکی بہکی نگاہ نے، مجھے اِک شرابی بنا دیا",
+      "romanization": "Sharaab kaisi, khumaar kaisa, yeh sab tumhari nawaazishen hain\nPilaai hai kis nazar se tu ne keh mujh ko apni khabar nahin hai\nTeri bahki bahki nigah ne, mujhe ik sharabi bana diya",
+      "translation": "What wine is this, what intoxication is this — all of it is your grace\nWith what kind of gaze have you given me to drink, that I have lost all awareness of myself\nYour reeling, reeling glance has made of me a drunkard complete",
+      "explanation": "The lover now questions the very nature of his intoxication — not with doubt but with wonder. This is the hal of hayra (bewilderment), one of the highest stations in Sufi spiritual experience, in which the mystic is so overwhelmed by divine manifestation that all categories dissolve. The loss of self-awareness — 'mujh ko apni khabar nahin' — is not madness but the classical Sufi state of fana fi'llah, annihilation in God, the disappearance of the nafs (ego-self) in the ocean of divine presence. The verse closes by returning to the bahki nigah line, anchoring this ecstatic dissolution firmly in the transformative power of the Beloved's gaze.",
+      "start": 412
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Sara Jahan Mast Verse",
+      "urdu_text": "سارا جہاں مست، جہاں کا نظام مست\nدن مست، رات مست، سحر مست، شام مست\nخُم مست، شیشہ مست، صُبو مست، جام مست\nیہ تیری چشمِ مست سے ہر خاصاں مست\nیوں تو ساقی ہر طرح کی تیرے مَے خانے میں ہے\nوہ بھی تھوڑی سی جو اِن آنکھوں کے پیمانے میں ہے\nسب سمجھتا ہوں تِری اِشوہ گری اے ساقی\nکام کرتی ہے نظر، نام ہے پیمانے کا\nتِری بہکی بہکی نگاہ نے، مجھے اِک شرابی بنا دیا",
+      "romanization": "Sara jahan mast, jahan ka nizam mast\nDin mast, raat mast, sahar mast, shaam mast\nKhum mast, shisha mast, subu mast, jaam mast\nYeh teri chashm-e-mast se har khasaan mast\nYun to saqi har tarah ki tere maikhanay mein hai\nWo bhi thodi si jo in aankhon ke paimanay mein hai\nSab samajhta hun teri ishwa-gari ae saqi\nKaam karti hai nazar, naam hai paimanay ka\nTeri bahki bahki nigah ne, mujhe ik sharabi bana diya",
+      "translation": "The whole world is intoxicated, the very order of existence is intoxicated\nDay intoxicated, night intoxicated, dawn intoxicated, dusk intoxicated\nThe wine jar intoxicated, the glass intoxicated, the flask intoxicated, the cup intoxicated\nFrom your intoxicated eye, every one of the chosen elect is intoxicated\nYour tavern holds every kind of wine, O saqi\nIncluding that little which lives in the goblet of these eyes\nI understand all your coquetry, O saqi\nIt is the glance that does the work — the goblet is merely its name\nYour reeling, reeling glance has made of me a drunkard complete",
+      "explanation": "This is the most cosmologically ambitious verse of the qawwali — an ecstatic catalogue in which the intoxication spreads outward from the lover to encompass all of creation. The Sufi concept being expressed is wahdat al-wujud (unity of being): if the divine wine permeates everything, then everything exists in a state of divine intoxication, from the cosmic order (nizam) down to the smallest cup (jaam). The line about the khasan — the chosen saints and the spiritually elect — being rendered mast by the divine gaze is a powerful equalizer: even the greatest awliya cannot resist this intoxication. The closing insight — 'kaam karti hai nazar, naam hai paimanay ka' — is one of the most philosophically dense lines in the poem: the goblet is merely a name, a form; it is the gaze that is the actual agent of intoxication. Form is nothing; the divine look is everything.",
+      "start": 503
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Tera Pyar Hai Verse",
+      "urdu_text": "تیرا پیار ہے میری زندگی\nنہ نماز آتی ہے مجھ کو نہ وضو آتا ہے\nسجدہ کر لیتا ہوں جب سامنے تُو آتا ہے\nمیں ازل سے بندہ مَے و عشق ہوں\nمجھے زورِ کفر کا غم نہیں\nمیرے سر کو دار تیرا مل گیا\nمجھے اب تلاشِ حرم نہیں\nمیرے سر کو دار تیرا مل گیا\nمجھے اب تلاشِ حرم نہیں\nمیری بندگی ہے وہ بندگی جو بقیدِ غیر حرام نہیں\nمیرا ایک نظر تمہیں دیکھنا وہ خدا، نماز سے کم نہیں\nجو تیری خوشی وہ میری خوشی\nیہ میرے جنوں کا ہے معجزہ\nجہاں اپنے سر کو جھکا دیا\nوہاں میں نے کعبہ بنا دیا",
+      "romanization": "Tera pyaar hai meri zindagi\nNa namaaz aati hai mujh ko na wuzu aata hai\nSajda kar leta hun jab saamne tu aata hai\nMain azal se banda-e-may o ishq hun\nMujhe zor-e-kufr ka gham nahin\nMere sar ko daar tera mil gaya\nMujhe ab talaash-e-haram nahin\nMere sar ko daar tera mil gaya\nMujhe ab talaash-e-haram nahin\nMeri bandagi hai wo bandagi jo baqaid-e-ghair haram nahin\nMera ek nazar tumhen dekhna wo khuda, namaaz se kam nahin\nJo teri khushi wo meri khushi\nYeh mere junun ka hai moajiza\nJahan apne sar ko jhuka diya\nWahan maine ka'ba bana diya",
+      "translation": "Your love is my life entire\nI know neither how to pray nor how to perform ablution\nYet I prostrate myself whenever you appear before me\nSince eternity I have been a servant of wine and love\nI have no grief over the stigma of unbelief\nMy head has found its gallows in you\nI no longer search for the Holy Sanctuary\nMy head has found its gallows in you\nI no longer search for the Holy Sanctuary\nMy worship is that worship which is not bound by the constraints of what is forbidden to others\nMy one glance at you, O God, is no less than formal prayer\nWhatever brings you joy brings me joy\nThis is the miracle of my divine madness —\nWherever I bowed my head\nThere I made my Ka'ba",
+      "explanation": "This is the theological and emotional summit of the entire qawwali. The lover declares himself freed from the outward forms of religion — not from impiety but from a worship so total that it has transcended ritual. The image of the daar (gallows) is a direct invocation of Mansur al-Hallaj, the tenth-century Sufi martyr who declared 'Ana'l-Haqq' and was executed, yet went to the gallows in ecstasy, seeing in his death the ultimate union with God. The repeated couplet 'mere sar ko daar tera mil gaya / mujhe ab talaash-e-haram nahin' is among the most daring statements in Urdu Sufi poetry: I have found my gallows in you, and having found that, I need no Ka'ba. The closing miracle — 'jahan apne sar ko jhuka diya, wahan maine ka'ba bana diya' — is the completion of this logic: for the true lover, every act of prostration creates its own sacred geography. The Ka'ba is not a building in Mecca; it is wherever love bows its head.",
+      "start": 583.88
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Mere Baad Verse",
+      "urdu_text": "میرے بعد کس کو ستاؤ گے\nکس کس کو ستاؤ گے میرے بعد\nعمر بھر پچھتاؤ گے تم مجھ کو ٹھکرانے کے بعد\nکس پہ توڑو گے ستم پھر میرے مٹ جانے کے بعد؟\nمیری وفاؤں کی یاد کرو گے\nرو رو کے فریاد کرو گے\nمجھ کو تو برباد کیا ہے، اور کسے برباد کرو گے؟",
+      "romanization": "Mere baad kisko sataoge\nKis kis ko sataoge mere baad\nUmar bhar pachhtaoge tum mujh ko tukranay ke baad\nKis pe toro ge sitam phir mere mit janay ke baad?\nMeri wafaon ki yaad karoge\nRo ro ke faryaad karoge\nMujh ko to barbaad kiya hai, aur kise barbaad karoge?",
+      "translation": "After me, whom will you torment?\nWhom and whom will you torment after me?\nYou will repent your whole life after having cast me aside\nUpon whom will you unleash your cruelty after I am gone?\nYou will remember my faithfulness\nWeeping and weeping you will cry out in lament\nYou have already destroyed me — who else will you destroy?",
+      "explanation": "This verse marks one of the most dramatic tonal shifts in the qawwali — from ecstatic surrender to tender, heartbroken defiance. The lover is not angry but prophetic: he foresees the Beloved's regret with absolute clarity. On the Sufi level this verse operates simultaneously as the soul addressing its own nafs: after the self is annihilated in fana, what will the ego find to cling to? The repeated 'kis kis ko' (whom and whom) is a rhetorical device of escalating pathos, building communal emotion in the gathering and drawing the audience deeper into the lover's predicament through the power of identification.",
+      "start": 715.26
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Dil Jalon Se Verse",
+      "urdu_text": "دل جلوں سے دل لگی اچھی نہیں\nرونے والوں سے ہنسی اچھی نہیں\nدل لگی ہی دل لگی میں دل گیا\nدل لگانے کا نتیجہ مل گیا\nمیں تو روتا ہوں کہ میرا دل گیا\nتم کیوں ہنستے ہو؟ تمہیں کیا مل گیا؟\nکس کس کو ستاؤ گے میرے بعد",
+      "romanization": "Dil jalon se dil lagi achi nahin\nRone walon se hansi achi nahin\nDil lagi hi dil lagi mein dil gaya\nDil lagane ka natija mil gaya\nMain to rota hun keh mera dil gaya\nTum kyun haste ho? Tumhen kya mil gaya?\nKis kis ko sataoge mere baad",
+      "translation": "It is not wise to give your heart to those whose hearts already burn\nIt is not fitting to laugh with those who only know how to weep\nIn the very act of giving my heart, my heart was lost\nThe consequence of loving has now been received\nI weep because my heart is gone —\nWhy do you laugh? What have you gained?\nWhom and whom will you torment after me?",
+      "explanation": "This verse introduces a note of philosophical rue — the lover reflecting on the inherent danger of ishq with a burning heart. The wordplay on 'dil lagi' (flirtation, attachment) and 'dil gaya' (the heart is gone) is characteristic of the Urdu poetic tradition's love of semantic compression: the very word for falling in love contains within it the announcement of loss. The sudden turn — 'tum kyun haste ho?' (why do you laugh?) — is a moment of raw confrontation, the lover catching the Beloved in a moment of amusement at his suffering. The verse closes by looping back to the 'mere baad' refrain, binding the two verses together into a single escalating emotional argument.",
+      "start": 785.38
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Jo Poocha Ke Verse",
+      "urdu_text": "جو پوچھا کہ کس طرح ہوتی ہے بارش؟\nجبیں سے پسینے کی بوندیں گرا دیں\nجو پوچھا کہ نغموں میں جادو ہے کیسا؟\nتو مِیٹھے تکلّم میں باتیں سنا دیں\nجو پوچھا کہ شب و روز ملتے ہیں کیسے؟\nتو چہرے پہ اپنے وہ زلفیں گرا دیں\nجو پوچھا کہ کس طرح گرتی ہے بجلی؟\nنگاہیں ملائیں، ملا کر جھکا دیں\nجو پوچھا کہ اپنی تمناؤں کا حال؟\nتو جلتی ہوئی چند شمعیں بجھا دیں\nمیں کہتا رہا، خطاؤں محبت کی اچھی سزا دی\nمیرے دل کی دنیا بنا کر مٹا دی",
+      "romanization": "Jo poocha keh kis tarah hoti hai baarish?\nJabeen se paseene ki boonden gira deen\nJo poocha keh naghmon mein jaadu hai kaisa?\nTo meethe takallum mein baaten suna deen\nJo poocha keh shab o roz milte hain kaise?\nTo chehre pe apne wo zulfain gira deen\nJo poocha keh kis tarah girti hai bijli?\nNigahen milaeen, mila kar jhuka deen\nJo poocha keh apni tamannaon ka haal?\nTo jalti hui chand shamein bujha deen\nMain kehta raha, khataen muhabbat ki achi saza di\nMere dil ki duniya bana kar mita di",
+      "translation": "When asked how rain falls —\nThey let drops of perspiration fall from their brow\nWhen asked what magic lives inside music —\nThey spoke in tones so sweet the answer became the song\nWhen asked how day and night find one another —\nThey let their tresses fall across their face\nWhen asked how lightning strikes —\nThey met my gaze, and having met it, cast it down\nWhen asked the condition of my own desires —\nThey extinguished a few burning candles\nI kept saying: the punishment for the sin of love was well given\nThey built a world in my heart, then erased it",
+      "explanation": "This verse is a masterpiece of indirect expression — a series of questions about natural phenomena answered not in words but in gesture, each gesture a metaphor for a dimension of love's power. Rain is the sweat of longing on the brow; music's magic is the sweet speech of the Beloved; the meeting of day and night is the veil of hair falling between them; lightning is the devastating glance. The final image — candles extinguished when asked about desire — is the most devastating: the Beloved answers the question of the lover's hopes by dousing them one by one, and the lover's response is not bitterness but acceptance. 'Achi saza di' — a good punishment was given — is the ultimate statement of Sufi rida (contentment with divine decree): whatever the Beloved does, even destruction, is received as grace.",
+      "start": 843.6
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Extended Mere Baad and Anwar-e-Meem Jaan passage",
+      "urdu_text": "کس کس کو ستاؤ گے میرے بعد، کس کو ستاؤ گے\nمجھے کس طرح مٹاؤ گے\nکہاں جا کے تیر چلاؤ گے\nمیری دوستی کی بلائیں لو\nمجھے ہاتھ اُٹھا کر دعائیں دو\nتمہیں ایک قاتل بنا دیا\nمجھے دیکھو خواہشیں جانِ جاں\nمیں وہی ہوں انورِ میم جاں\nتمہیں اتنا خوش تھا جب کہا\nنہ چلاؤ اس طرح تم زبان\nبولو میرا شکریہ مہربان\nتمہیں بات کرنا سکھا دیا",
+      "romanization": "Kis kis ko sataoge mere baad, kis ko sataoge\nMujhe kis tarah mitaoge\nKahan ja ke teer chalaoge\nMeri dosti ki balaen lo\nMujhe haath utha kar duaen do\nTumhen ek qaatil bana diya\nMujhe dekho khwaahishen jaan-e-jaan\nMain wohi hun Anwar-e-Meem Jaan\nTumhen itna khush tha jab kaha\nNa chalaao is tarah tum zubaan\nBolo mera shukriya mehrban\nTumhen baat karna sikha diya",
+      "translation": "Whom and whom will you torment after me, whom will you torment?\nHow will you erase me?\nWhere will you go to aim your arrows?\nTake upon yourself the misfortunes of my friendship\nRaise your hands and offer me your prayers\nI have made of you a murderer\nLook at me, O desires, O soul of my soul\nI am that same Anwar-e-Meem Jaan\nYou were so pleased when told —\nDo not wield your tongue this way\nSay thank you to me, kind one\nI have taught you how to speak",
+      "explanation": "This section represents one of the most remarkable features of Nusrat's live qawwali style — the seamless weaving of the 'mere baad' refrain back into the fabric of the performance after the 'jo poocha' verse, followed by a sudden pivot into playful, almost comedic self-reference. 'Balaen lena' is a ritual of deep love in South Asian tradition — taking upon oneself the evil eye or misfortune that threatens the beloved. The identification of the singer as 'Anwar-e-Meem Jaan' is a makhlas moment, the performer embedding a name within the performance as classical poets did in the final sher of a ghazal. The closing turn — scolding the Beloved for speaking harshly, demanding thanks for having taught them to speak — is Nusrat's signature humor, a deliberate comic deflation that releases the accumulated spiritual tension and paradoxically deepens the hal through laughter, a well-understood technique in the qawwali tradition.",
+      "start": 888
+    },
+    {
+      "type": "lyric",
+      "timestamp_hint": "Closing Refrain",
+      "urdu_text": "یہ جو ہلکا ہلکا سرور ہے\nیہ تِری نظر کا قصور ہے\nکہ شراب پینا سکھا دیا",
+      "romanization": "Yeh jo halka halka suroor hai\nYeh teri nazar ka qasoor hai\nKeh sharaab peena sikha diya",
+      "translation": "This gentle, gentle intoxication that lingers —\nThis is the fault of your gaze\nThat taught me how to drink",
+      "explanation": "The closing return to the refrain after the comedy of the Anwar-e-Meem Jaan passage is a masterstroke of qawwali architecture. The laughter has cleared the air; the gathering is now open and softened; and the refrain lands one final time with the accumulated weight of everything that has preceded it — the opening transgression, the cosmic intoxication, the theological audacity, the heartbreak, the humor. The 'halka halka' (gentle, gentle) of the title is the final word on the Sufi spiritual state: not the crash of wine, not the drama of mystical ecstasy, but a soft, persistent, indelible alteration — the soul that has once been touched by the divine gaze can never return to what it was before.",
+      "start": 962.28
+    }
+  ],
+  "timestamps": [
+    {
+      "line": "[music]",
+      "start": 0
+    },
+    {
+      "line": "ساقی کی ہر نگاہ پہ بل کھا کے پی گیا",
+      "start": 38
+    },
+    {
+      "line": "لہروں سے کھیلتا ہوا لہرا کے پی گیا",
+      "start": 66.56
+    },
+    {
+      "line": "اے رحمتِ تمام، میری ہر خطا معاف",
+      "start": 91.54
+    },
+    {
+      "line": "میں انتہائے شوق میں گھبرا کے پی گیا",
+      "start": 103.86
+    },
+    {
+      "line": "اے رحمتِ تمام، میری ہر خطا معاف",
+      "start": 110.54
+    },
+    {
+      "line": "میں انتہائے شوق میں گھبرا کے پی گیا",
+      "start": 118.88
+    },
+    {
+      "line": "پیتا بغیر اِذن، پیتا بغیر اِذن، یہ کب تھی میری مجال؟",
+      "start": 126
+    },
+    {
+      "line": "در پردہ چشمِ یار کی شہ پا کے پی گیا",
+      "start": 140
+    },
+    {
+      "line": "زاہد یہ میری شوخیِ رِندان نہ دیکھ نہ",
+      "start": 163
+    },
+    {
+      "line": "توبہ کو توڑ تار کے تھرّا کے پی گیا",
+      "start": 170
+    },
+    {
+      "line": "اودی اودی گھٹائیں آتی ہیں",
+      "start": 189
+    },
+    {
+      "line": "مطربوں کی نوائیں آتی ہیں",
+      "start": 196
+    },
+    {
+      "line": "کس کے گیسو کھلے ہیں ساون میں؟",
+      "start": 202.92
+    },
+    {
+      "line": "مہکی مہکی ہوائیں آتی ہیں",
+      "start": 205
+    },
+    {
+      "line": "آؤ سینے چمن میں رقص کریں",
+      "start": 211
+    },
+    {
+      "line": "ساز لے کر گھٹائیں آتی ہیں",
+      "start": 215
+    },
+    {
+      "line": "دیکھ کر اُن کی آنکھوں کو کڑھنے والوں کو حیائیں آتی ہیں",
+      "start": 234
+    },
+    {
+      "line": "پاس رہتا ہے دور رہتا ہے، کوئی دل میں ضرور رہتا ہے",
+      "start": 244.53
+    },
+    {
+      "line": "جب سے دیکھا ہے تیری آنکھوں کو ہلکا ہلکا سرور رہتا ہے",
+      "start": 256.67
+    },
+    {
+      "line": "ایسے رہتے ہیں وہ میرے دل میں جیسے ظلمت میں نور رہتا ہے",
+      "start": 284.61
+    },
+    {
+      "line": "اب عدم کا یہ حال ہے ہر وقت مست رہتا ہے چور رہتا ہے",
+      "start": 295
+    },
+    {
+      "line": "یہ جو ہلکا ہلکا سرور ہے",
+      "start": 302.51
+    },
+    {
+      "line": "یہ تِری نظر کا قصور ہے",
+      "start": 316
+    },
+    {
+      "line": "کہ شراب پینا سکھا دیا",
+      "start": 321
+    },
+    {
+      "line": "[music]",
+      "start": 325
+    },
+    {
+      "line": "یہ جو ہلکا ہلکا سرور ہے",
+      "start": 357
+    },
+    {
+      "line": "یہ تِری نظر کا قصور ہے",
+      "start": 364
+    },
+    {
+      "line": "کہ شراب پینا سکھا دیا",
+      "start": 372
+    },
+    {
+      "line": "تِرے پیار نے، تِری چاہ نے",
+      "start": 381
+    },
+    {
+      "line": "تِری بہکی بہکی نگاہ نے",
+      "start": 388
+    },
+    {
+      "line": "مجھے اِک شرابی بنا دیا",
+      "start": 392
+    },
+    {
+      "line": "شراب کیسی، خمار کیسا، یہ سب تمہاری نوازشیں ہیں",
+      "start": 412
+    },
+    {
+      "line": "پلائی ہے کس نظر سے تُو نے کہ مجھ کو اپنی خبر نہیں ہے",
+      "start": 431.81
+    },
+    {
+      "line": "تِری بہکی بہکی نگاہ نے، مجھے اِک شرابی بنا دیا",
+      "start": 440
+    },
+    {
+      "line": "[music]",
+      "start": 448
+    },
+    {
+      "line": "سارا جہاں مست، جہاں کا نظام مست",
+      "start": 503
+    },
+    {
+      "line": "دن مست، رات مست، سحر مست، شام مست",
+      "start": 513
+    },
+    {
+      "line": "خُم مست، شیشہ مست، صُبو مست، جام مست",
+      "start": 520.72
+    },
+    {
+      "line": "یہ تیری چشمِ مست سے ہر خاصاں مست",
+      "start": 526
+    },
+    {
+      "line": "یوں تو ساقی ہر طرح کی تیرے مَے خانے میں ہے",
+      "start": 534
+    },
+    {
+      "line": "وہ بھی تھوڑی سی جو اِن آنکھوں کے پیمانے میں ہے",
+      "start": 548
+    },
+    {
+      "line": "سب سمجھتا ہوں تِری اِشوہ گری اے ساقی",
+      "start": 564.42
+    },
+    {
+      "line": "کام کرتی ہے نظر، نام ہے پیمانے کا",
+      "start": 572.62
+    },
+    {
+      "line": "تِری بہکی بہکی نگاہ نے، مجھے اِک شرابی بنا دیا",
+      "start": 576
+    },
+    {
+      "line": "تیرا پیار ہے میری زندگی",
+      "start": 583.88
+    },
+    {
+      "line": "نہ نماز آتی ہے مجھ کو نہ وضو آتا ہے",
+      "start": 608.84
+    },
+    {
+      "line": "سجدہ کر لیتا ہوں جب سامنے تُو آتا ہے",
+      "start": 613.58
+    },
+    {
+      "line": "میں ازل سے بندہ مَے و عشق ہوں",
+      "start": 625.12
+    },
+    {
+      "line": "مجھے زورِ کفر کا غم نہیں",
+      "start": 631
+    },
+    {
+      "line": "میرے سر کو دار تیرا مل گیا",
+      "start": 638
+    },
+    {
+      "line": "مجھے اب تلاشِ حرم نہیں",
+      "start": 641
+    },
+    {
+      "line": "میرے سر کو دار تیرا مل گیا",
+      "start": 644
+    },
+    {
+      "line": "مجھے اب تلاشِ حرم نہیں",
+      "start": 650
+    },
+    {
+      "line": "میری بندگی ہے وہ بندگی جو بقیدِ غیر حرام نہیں",
+      "start": 652
+    },
+    {
+      "line": "میرا ایک نظر تمہیں دیکھنا وہ خدا، نماز سے کم نہیں",
+      "start": 665
+    },
+    {
+      "line": "جو تیری خوشی وہ میری خوشی",
+      "start": 687
+    },
+    {
+      "line": "یہ میرے جنوں کا ہے معجزہ",
+      "start": 694.8
+    },
+    {
+      "line": "جہاں اپنے سر کو جھکا دیا",
+      "start": 701.86
+    },
+    {
+      "line": "وہاں میں نے کعبہ بنا دیا",
+      "start": 704.82
+    },
+    {
+      "line": "میرے بعد کس کو ستاؤ گے",
+      "start": 715.26
+    },
+    {
+      "line": "کس کس کو ستاؤ گے میرے بعد",
+      "start": 723.2
+    },
+    {
+      "line": "عمر بھر پچھتاؤ گے تم مجھ کو ٹھکرانے کے بعد",
+      "start": 739.76
+    },
+    {
+      "line": "کس پہ توڑو گے ستم پھر میرے مٹ جانے کے بعد؟",
+      "start": 744
+    },
+    {
+      "line": "میری وفاؤں کی یاد کرو گے",
+      "start": 756.44
+    },
+    {
+      "line": "رو رو کے فریاد کرو گے",
+      "start": 762
+    },
+    {
+      "line": "مجھ کو تو برباد کیا ہے، اور کسے برباد کرو گے؟",
+      "start": 769.54
+    },
+    {
+      "line": "دل جلوں سے دل لگی اچھی نہیں",
+      "start": 785.38
+    },
+    {
+      "line": "رونے والوں سے ہنسی اچھی نہیں",
+      "start": 794.92
+    },
+    {
+      "line": "دل لگی ہی دل لگی میں دل گیا",
+      "start": 804.58
+    },
+    {
+      "line": "دل لگانے کا نتیجہ مل گیا",
+      "start": 814.02
+    },
+    {
+      "line": "میں تو روتا ہوں کہ میرا دل گیا",
+      "start": 823.74
+    },
+    {
+      "line": "تم کیوں ہنستے ہو؟ تمہیں کیا مل گیا؟",
+      "start": 832
+    },
+    {
+      "line": "کس کس کو ستاؤ گے میرے بعد",
+      "start": 836
+    },
+    {
+      "line": "جو پوچھا کہ کس طرح ہوتی ہے بارش؟",
+      "start": 843.6
+    },
+    {
+      "line": "جبیں سے پسینے کی بوندیں گرا دیں",
+      "start": 847.99
+    },
+    {
+      "line": "جو پوچھا کہ نغموں میں جادو ہے کیسا؟",
+      "start": 852.38
+    },
+    {
+      "line": "تو مِیٹھے تکلّم میں باتیں سنا دیں",
+      "start": 854
+    },
+    {
+      "line": "جو پوچھا کہ شب و روز ملتے ہیں کیسے؟",
+      "start": 857
+    },
+    {
+      "line": "تو چہرے پہ اپنے وہ زلفیں گرا دیں",
+      "start": 861
+    },
+    {
+      "line": "جو پوچھا کہ کس طرح گرتی ہے بجلی؟",
+      "start": 864
+    },
+    {
+      "line": "نگاہیں ملائیں، ملا کر جھکا دیں",
+      "start": 867
+    },
+    {
+      "line": "جو پوچھا کہ اپنی تمناؤں کا حال؟",
+      "start": 871.99
+    },
+    {
+      "line": "تو جلتی ہوئی چند شمعیں بجھا دیں",
+      "start": 874
+    },
+    {
+      "line": "میں کہتا رہا، خطاؤں محبت کی اچھی سزا دی",
+      "start": 878
+    },
+    {
+      "line": "میرے دل کی دنیا بنا کر مٹا دی",
+      "start": 885
+    },
+    {
+      "line": "کس کس کو ستاؤ گے میرے بعد، کس کو ستاؤ گے",
+      "start": 888
+    },
+    {
+      "line": "مجھے کس طرح مٹاؤ گے",
+      "start": 896
+    },
+    {
+      "line": "کہاں جا کے تیر چلاؤ گے",
+      "start": 900.18
+    },
+    {
+      "line": "میری دوستی کی بلائیں لو",
+      "start": 905
+    },
+    {
+      "line": "مجھے ہاتھ اُٹھا کر دعائیں دو",
+      "start": 912.4
+    },
+    {
+      "line": "تمہیں ایک قاتل بنا دیا",
+      "start": 915.56
+    },
+    {
+      "line": "مجھے دیکھو خواہشیں جانِ جاں",
+      "start": 924
+    },
+    {
+      "line": "میں وہی ہوں انورِ میم جاں",
+      "start": 931.26
+    },
+    {
+      "line": "تمہیں اتنا خوش تھا جب کہا",
+      "start": 937.52
+    },
+    {
+      "line": "نہ چلاؤ اس طرح تم زبان",
+      "start": 942
+    },
+    {
+      "line": "بولو میرا شکریہ مہربان",
+      "start": 948.4
+    },
+    {
+      "line": "تمہیں بات کرنا سکھا دیا",
+      "start": 953.04
+    },
+    {
+      "line": "یہ جو ہلکا ہلکا سرور ہے",
+      "start": 962.28
+    },
+    {
+      "line": "یہ تِری نظر کا قصور ہے",
+      "start": 966.03
+    },
+    {
+      "line": "کہ شراب پینا سکھا دیا",
+      "start": 969.78
+    }
+  ]
+}
