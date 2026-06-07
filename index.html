@@ -41,10 +41,10 @@ h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-li
 /* QAWWALI VIEW */
 .qawwali-view-inner{max-width:920px;margin:0 auto;padding:0 0 4rem;}
 .qv-header{padding:1.2rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
-.qv-title-block{}
-.qv-urdu-title{font-family:'Noto Nastaliq Urdu',serif;font-size:1.4rem;color:var(--gold-light);direction:rtl;line-height:1.5;margin-bottom:.2rem;}
-.qv-english-title{font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);opacity:.85;font-weight:400;margin-bottom:.2rem;}
-.qv-meta{color:var(--muted);font-size:.82rem;font-family:'Libre Baskerville',serif;margin-top:.1rem;}
+.qv-title-block{text-align:center;flex:1;}
+.qv-urdu-title{font-family:'Noto Nastaliq Urdu',serif;font-size:1.4rem;color:var(--gold-light);direction:rtl;line-height:1.5;margin-bottom:.2rem;text-align:center;}
+.qv-english-title{font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);opacity:.85;font-weight:400;margin-bottom:.2rem;text-align:center;}
+.qv-meta{color:var(--muted);font-size:.82rem;font-family:'Libre Baskerville',serif;margin-top:.1rem;text-align:center;}
 .btn-back{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:.45rem .9rem;font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .2s;flex-shrink:0;}
 .btn-back:hover{border-color:var(--gold);color:var(--gold);}
 
@@ -86,8 +86,10 @@ h1{font-family:'Cinzel',serif;font-size:2rem;font-weight:400;color:var(--gold-li
 .tl-circle.type-instrumental.active{background:var(--instr);box-shadow:0 0 8px var(--instr);}
 .tl-circle.type-tarana.active{background:var(--tarana);box-shadow:0 0 8px var(--tarana);}
 .lyric-sep{text-align:center;color:var(--muted);font-size:.75rem;letter-spacing:.4em;margin:.4rem 0;opacity:.35;display:block;direction:ltr;}
-.music-row{display:flex;align-items:center;justify-content:flex-end;min-height:1.8rem;margin-bottom:.1rem;padding-right:.2rem;}
-.music-label{font-size:.72rem;color:var(--muted);font-style:italic;font-family:'Libre Baskerville',serif;}
+.music-row{display:flex;align-items:center;justify-content:flex-end;min-height:1.8rem;margin-bottom:.1rem;padding-right:.2rem;border-radius:4px;transition:background .2s;}
+.music-row.active{background:rgba(193,154,72,.08);}
+.music-row.active .music-label{color:var(--gold);opacity:.8;}
+.music-label{font-size:.72rem;color:var(--muted);font-style:italic;font-family:'Libre Baskerville',serif;transition:color .2s;}
 
 /* Analysis */
 .analysis-body{padding:1.5rem;}
@@ -320,6 +322,7 @@ function renderQawwaliView(data) {
     if (ts.line === '[music]') {
       const musicRow = document.createElement('div');
       musicRow.className = 'music-row';
+      musicRow.dataset.tsIdx = idx;
       musicRow.innerHTML = '<span class="music-label">· · · instrumental · · ·</span>';
       lyricsDiv.appendChild(musicRow);
       return;
@@ -468,17 +471,43 @@ function createYT(videoId) {
 
 function highlightLine(currentTime) {
   if (!currentEntry) return;
-  const timestamps = (currentEntry.timestamps || []).filter(t => t.line !== '[music]');
+  const timestamps = currentEntry.timestamps || [];
   if (!timestamps.length) return;
-  let activeIdx = 0;
+
+  // Find active timestamp index (chronological — handles repeats correctly)
+  let activeTsIdx = 0;
   for (let i = 0; i < timestamps.length; i++) {
-    if (timestamps[i].start <= currentTime) activeIdx = i;
+    if (timestamps[i].start <= currentTime) activeTsIdx = i;
     else break;
   }
+
+  const activeLine = timestamps[activeTsIdx] ? timestamps[activeTsIdx].line : '';
+  const isMusic = activeLine === '[music]';
+
+  // Highlight lyric rows
   const lyricEls = document.querySelectorAll('#qvLyrics .lyric-text');
   const circleEls = document.querySelectorAll('#qvLyrics .tl-circle');
-  lyricEls.forEach((el,i) => el.classList.toggle('active', i===activeIdx));
-  circleEls.forEach((el,i) => el.classList.toggle('active', i===activeIdx));
+
+  if (isMusic) {
+    // Deactivate all lyric lines and circles
+    lyricEls.forEach(el => el.classList.remove('active'));
+    circleEls.forEach(el => el.classList.remove('active'));
+    // Highlight the music row that matches this timestamp index
+    document.querySelectorAll('#qvLyrics .music-row').forEach(row => {
+      row.classList.toggle('active', parseInt(row.dataset.tsIdx) === activeTsIdx);
+    });
+  } else {
+    // Deactivate all music rows
+    document.querySelectorAll('#qvLyrics .music-row').forEach(row => row.classList.remove('active'));
+    // Find which lyric row index this corresponds to
+    // Count only non-music timestamps up to activeTsIdx
+    let lyricIdx = 0;
+    for (let i = 0; i <= activeTsIdx; i++) {
+      if (timestamps[i].line !== '[music]') lyricIdx = i - timestamps.slice(0, i).filter(t => t.line === '[music]').length;
+    }
+    lyricEls.forEach((el, i) => el.classList.toggle('active', i === lyricIdx));
+    circleEls.forEach((el, i) => el.classList.toggle('active', i === lyricIdx));
+  }
 }
 
 function stopYT() {
